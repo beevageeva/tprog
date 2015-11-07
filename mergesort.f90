@@ -24,7 +24,7 @@ read*, a
 
 
 print*, "Ordered"
-call mergesort(a,0,n)
+call mergesort(a,1,n)
 print*, a
 
 deallocate(a)
@@ -42,50 +42,65 @@ recursive subroutine mergesort(arr, i1, i2)
   real, dimension(:), allocatable  :: temp  
   integer :: j,j1,j2
 
-  logical :: fin1, fin2
 
   print*, "i1=", i1, ", i2=", i2
 
-  if(i2-i1>1) then
-    middle=(i2-i1)/2
+  if(i2-i1>0) then
+    middle=(i1+i2-1)/2
     print*,"MIDDLE=", middle
-    print*, "array before MS"
-    print*, arr
-    print*, "EA"
+!    print*, "array before MS"
+!    print*, arr
+!    print*, "EA"
     call mergesort(arr,i1,middle)
     call mergesort(arr,middle+1,i2)
-    print*, "array after MS"
-    print*, arr
-    print*, "EA"
-    allocate(temp(i2-i1))
+!    print*, "array after MS"
+!    print*, arr
+!    print*, "EA"
+    allocate(temp(i2-i1+1))
     do j=i1,i2
       temp(j+1-i1) = arr(j)
     end do
 
-    fin1 = .FALSE.
-    fin2 = .FALSE.
     j = i1
     j1 = i1
     j2 = middle+1  
-    do while (j<=i2)
-      if(j1==i1+1) then
-        fin1 = .TRUE.
-      end if
-      if(j2==i2+1) then
-        fin2 = .TRUE.
-      end if
+    print*, "back to i1=", i1, ", i2=", i2, ",middle=",middle
+    print*, "temp"
+    print* ,temp
+    !do while (.NOT. fin1 .OR. .NOT. fin2)
+    do while (j1<=middle .AND. j2<=i2)
 
-      if((temp(j1)>temp(j2) .AND. .NOT. fin2) .OR.  fin1 ) then
-        arr(j) = temp(j2-i1+1)
-        j2=j2+1  
-      else
+
+      if(temp(j1-i1+1)<temp(j2-i1+1)) then
         arr(j) = temp(j1-i1+1)
-        j1=j1+1
+        print*, "1 arr(",j,")=temp(",(j1-i1+1),")" 
+        j1=j1+1  
+	      if(j1==middle+1) then !fin1 = true
+	        do while(j2<=i2)
+	          arr(j2) = temp(j2-i1+1)
+            print*, "fin1=true, arr(",j2,")=temp(",(j2-i1+1),")" 
+	          j2 = j2+1
+	        end do
+	        exit !or cycle
+	       end if 
+      else 
+        arr(j) = temp(j2-i1+1)
+        print*, "2 arr(",j,")=temp(",(j2-i1+1),")" 
+        j2=j2+1
+	      if(j2==i2+1) then !fin2 = true
+	        do while(j1<=middle)
+	          arr(j1+i2-middle) = temp(j1-i1+1)
+            print*, "fin2= true arr(",j1+i2-middle,")=temp(",(j1-i1+1),")" 
+	          j1 = j1+1
+	        end do
+	        exit !or cycle
+	      end if
       end if
       j = j+1
+
+        
     end do   
     deallocate(temp)
- 
     
   endif
   

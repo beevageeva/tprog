@@ -1,0 +1,70 @@
+program hello
+implicit none
+
+!type definition
+type  :: BST
+  real :: val
+  type(BST), pointer :: left, right
+end type BST
+
+!main
+type(BST), pointer :: create 
+type(BST), pointer :: root => create(5)
+logical :: res
+res = insert(root, real(6))
+print*, res
+
+
+contains
+
+
+
+function create(val) result (node)
+    implicit none
+    type(BST), pointer   :: node  
+    real, intent(in) :: val
+    allocate(node)
+    root%val = val
+    nullify(node%left) 
+    nullify(node%right) 
+  end function create
+
+recursive function insert(root, val) result (ex)
+    implicit none
+    type(BST), pointer, intent(in) :: root
+    real, intent(in) :: val
+    logical :: ex
+    type(BST), pointer :: tmp
+    
+    if(root%val == val)then
+      ex = .TRUE.
+    else if(val<root%val) then
+      if(associated(root%left))then
+        ex = insert(root%left)
+      else
+        ! insert as left
+        root%left => create(val)
+        ex = .FALSE.
+      end if 
+    else
+      if(associated(root%right))then
+        ex = insert(root%right)
+      else
+        ! insert as right
+        root%right => create(val)
+        ex = .FALSE.
+      end if 
+    end if
+  end function insert 
+
+
+  function existe_rama_izq(tree) result(ex)
+    implicit none
+    type(BST), pointer, intent(in) :: tree
+    logical :: ex
+    ex = associated(tree%left)
+  end function existe_rama_izq 
+
+
+end program hello
+

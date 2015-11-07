@@ -1,0 +1,61 @@
+program tree_sort
+!http://www.fortran.com/fortran_storenew/Html/Info/books/gd3_c08.html
+! Sorts a file of integers by building a
+! tree, sorted in infix order.
+! This sort has expected behavior n log n,
+! but worst case (input is sorted) n ** 2.
+
+   implicit none
+   type node
+      integer :: value
+      type (node), pointer :: left, right
+   end type node
+
+   type (node), pointer :: t  ! A tree
+   integer :: number, ios
+
+   nullify (t)  ! Start with empty tree
+   do
+      read (*, *, iostat = ios) number
+      if (ios < 0) exit
+      call insert (t, number) ! Put next number in tree
+   end do
+   ! Print nodes of tree in infix order
+   call print_tree (t)
+
+contains
+
+   recursive subroutine insert (t, number)
+
+      type (node), pointer :: t  ! A tree
+      integer, intent (in) :: number
+
+      ! If (sub)tree is empty, put number at root
+      if (.not. associated (t)) then
+         allocate (t)
+         t % value = number
+         nullify (t % left)
+         nullify (t % right)
+      ! Otherwise, insert into correct subtree
+      else if (number < t % value) then
+         call insert (t % left, number)
+      else
+         call insert (t % right, number)
+      end if
+
+   end subroutine insert
+
+   recursive subroutine print_tree (t)
+   ! Print tree in infix order
+
+      type (node), pointer :: t  ! A tree
+
+      if (associated (t)) then
+         call print_tree (t % left)
+         print *, t % value
+         call print_tree (t % right)
+      end if
+
+   end subroutine print_tree
+
+end program tree_sort
