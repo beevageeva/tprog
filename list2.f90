@@ -6,8 +6,7 @@ program hello
       type (cell), pointer :: prev, next
    end type  cell
 
-   type (cell), target :: head
-   type (cell), pointer :: curr, temp, t, tprev
+   type (cell), pointer :: head, curr, temp, t, tprev
    integer :: i, n
 
    real :: val
@@ -20,6 +19,7 @@ program hello
    end if
       
    read*, val 
+   allocate(head)
    head%val = val
    nullify(head%prev) 
    nullify(head%next) 
@@ -34,15 +34,23 @@ program hello
          t => t % next
       end do
       ! t.prev --  temp -- t
+      ! curr -- temp -- t(nil)      at the end
+      ! nil(t.prev) -- temp -- t    at the beginning
       if(.NOT. associated(t)) then
         tprev => curr
+        curr => temp
       else
         tprev => t % prev
+        t % prev => temp
       end if
       temp % next => t
       temp % prev => tprev
-      tprev % next => temp
-      tprev => temp
+      ! tprev might be null - at the beginning and set head in this case
+      if(associated(tprev)) then
+        tprev % next => temp
+      else
+        head => temp
+      end if
         
        
    end do

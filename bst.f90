@@ -13,14 +13,15 @@ program tree_sort
 
    type (tree), pointer :: t  ! A tree
    real :: val
+   integer :: i,n
 
    nullify (t)  ! Start with empty tree
 
-   read*, val 
-   do while(val .NE. -1)
-      call insert (t, val) ! Put next number in tree
+   read*, n
+   do i=1,n
       read*, val 
-   end do
+      call insert (t, val) ! Put next number in tree
+   end do   
    ! Print trees of tree in infix order
    call print_tree (t)
     print*, "another print tree"
@@ -29,6 +30,7 @@ program tree_sort
     call printTree (t)
    end if
     
+  Print*, "head val", (t % val)
 
 contains
 
