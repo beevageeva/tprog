@@ -1,6 +1,6 @@
 program hanoi
    implicit none
-   call move (4,1,3)
+   call move (3,1,3)
 
 contains
 

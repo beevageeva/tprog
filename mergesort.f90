@@ -57,9 +57,11 @@ recursive subroutine mergesort(arr, i1, i2)
 !    print*, arr
 !    print*, "EA"
     allocate(temp(i2-i1+1))
-    do j=i1,i2
-      temp(j+1-i1) = arr(j)
-    end do
+!    do j=i1,i2
+!      temp(j+1-i1) = arr(j)
+!    end do
+    temp = arr(i1:i2)
+
 
     j = i1
     j1 = i1
