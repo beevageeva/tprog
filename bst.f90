@@ -36,7 +36,7 @@ contains
 
    recursive subroutine insert (t, val)
 
-      type (tree), pointer :: t  ! A tree
+      type (tree), pointer :: t  
       real, intent (in) :: val
 
       ! If (sub)tree is empty, put val at root
