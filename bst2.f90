@@ -60,7 +60,29 @@ function createCell(val) result(res)
 
 end function createCell
 
+! the following also works see declaration of t not intent(in)
+   recursive subroutine insert (t, val)
 
+      type (cell), pointer :: t  
+      real, intent (in) :: val
+
+      ! If (sub)tree is empty, put val at root
+      if (.not. associated (t)) then
+         allocate (t)
+         t % val= val
+         nullify (t % left)
+         nullify (t % right)
+      !do not insert duplicates
+      else if(val .NE. t % val) then
+      ! Otherwise, insert into correct subtree
+	      if (val < t % val) then
+	         call insert (t % left, val)
+	      else
+	         call insert (t % right, val)
+	      end if
+      end if
+
+   end subroutine insert
 
 RECURSIVE SUBROUTINE place_number(node,val)
       type (cell), pointer, intent(in) :: node
