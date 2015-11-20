@@ -1,0 +1,8 @@
+0.001                                                             !dt (paso temporal)
+0.1                                                               !dt_im (paso temporal para imprimir resultado)
+100                                                               !t (tiempo de la simulación)
+3                                                                 !n (número de cuerpos)
+1.0 .9700436 -.24308753 0.0 .466203685 0.43236573 0.0             !m x y z vx vy vz
+1.0 -.9700436 .24308753 0.0 .466203685 0.43236573 0.0             !m x y z vx vy vz
+1.0 0.0 0.0 0.0   -0.93249737 -0.86473146 0.0                     !m x y z vx vy vz
+

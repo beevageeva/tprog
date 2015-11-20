@@ -1,0 +1,6 @@
+self.ranges[int(float(header[102+2*i]))] =  [True, 1,float(header[102+2*i+1]) ]
+endrange1: visible, objNum, mass
+
+
+from model output:
+positions, velocities for n part

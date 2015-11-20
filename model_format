@@ -1,0 +1,16 @@
+first  line split "\s+"
+1 -  numpart
+101 - numRanges 
+102 , 103 endrange1, mass1
+....
+
+
+n part lines skip 
+
+n radius lines - 3 comp  for n part
+n velocity lines with 3 reals components for n part
+
+
+
+
+
