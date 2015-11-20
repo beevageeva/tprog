@@ -54,6 +54,8 @@ PROGRAM tree
   CALL Nullify_Pointers(head)
   
 
+  !WRITE(*,*,'ADVANCE=NO') val
+
 !! Creaci\ufffdn del \ufffdrbol inicial
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!
   DO i = 1,n
