@@ -7,7 +7,6 @@ PROGRAM tree
   REAL, DIMENSION(:), ALLOCATABLE :: m
   REAL, DIMENSION(:,:), ALLOCATABLE :: r,v,a
   REAL, DIMENSION(3) :: rji
-  REAL, DIMENSION(110) :: header
 
   TYPE RANGE
      REAL, DIMENSION(3) :: min,max
@@ -75,12 +74,6 @@ PROGRAM tree
 !!!!!!!!!!!!!!!!!!
   t_out = 0.0
 
-  !calculate header
-  header[1] = n
-  header[101] = 1
-
-  !end calculate header
-  
 
 
   DO t = 0.0, t_end, dt
@@ -111,7 +104,6 @@ PROGRAM tree
      IF (t_out >= dt_out) THEN
         
 
-        PRINT*, header
         
         DO i = 1,n
            PRINT*, r(i,:)

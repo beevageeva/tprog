@@ -2,7 +2,8 @@ import re
 import sys
 
 with open(sys.argv[1]) as f:
-	modelNumber = 2
+	#modelNumber = 2
+	modelNumber = int(sys.argv[2])
 	marr = re.split('-----+', f.read())
 	fnbase = "Model%d.txt"
 	for m in marr:

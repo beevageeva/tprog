@@ -31,8 +31,16 @@ import wx, wx.html, sys,getopt
 
 
 useCalcValues = True
+MARKERSIZE = 10
 
 
+
+def getRandomColor():
+	from random import random
+	red = random()
+	blue = random()
+	green = random()	
+	return "#%02x%02x%02x" % (red*255, green*255, blue*255)
 
 
 
@@ -201,6 +209,12 @@ class CanvasFrame(wx.Frame):
 
 
 				self.ranges = ranges
+				self.objColor = {}
+
+				for k in self.ranges.keys():
+					v = self.ranges[k]
+					if not self.objColor.has_key(v[1]):		
+						self.objColor[v[1]] = getRandomColor()		
 
 
 				self.numpart = max(self.ranges.keys(), key=int)
@@ -426,6 +440,19 @@ class CanvasFrame(wx.Frame):
 					indices2+=range(lastindex, item[0])
 				lastindex = item[0]
 			return indices1, indices2
+
+		def  selectMultipleObjects(self, testVis = True, returnStr = False):
+			lastindex = 0	
+			indices = {}
+			for k in self.ranges.keys():
+				v = self.ranges[k]
+				indices[v[1]] = []
+			for item in sorted(self.ranges.items()):
+				#print("Object is %d" % item[1][1])
+				if((testVis and item[1][0]) or not testVis):
+					indices[item[1][1]]+=range(lastindex, item[0])
+				lastindex = item[0]
+			return indices
 
 		def  selectObjectsAll(self, testVis = True, returnStr = False):
 			lastindex = 0	
@@ -988,22 +1015,17 @@ class CanvasFrame(wx.Frame):
 			self.axes.grid(False)
 			self.vector = None
 					
-			indices1, indices2 = self.selectObjects()
-			#print("indices 1")
-			#print(indices1)	
-			#print("indices 2")
-			#print(indices2)	
+			indices = self.selectMultipleObjects()
 
-			x1 = self.data[indices1,0]
-			x2 = self.data[indices2,0]
-			y1 = self.data[indices1,1]
-			y2 = self.data[indices2,1]
-			z1 = self.data[indices1,2]
-			z2 = self.data[indices2,2]
+			for indK in indices.keys():	
+				ind = indices[indK]
+				
+				x1 = self.data[ind,0]
+				y1 = self.data[ind,1]
+				z1 = self.data[ind,2]
 
-			#plot points			
-			self.axes.plot(x1, y1, z1,  "go", markersize=1, picker=1)
-			self.axes.plot(x2 , y2, z2, "ro", markersize=1, picker=1)
+				#plot points			
+				self.axes.plot(x1, y1, z1,  "o", markersize=MARKERSIZE, picker=1, color=self.objColor[indK])
 
 
 			#use mayavi package?
@@ -1035,44 +1057,44 @@ class CanvasFrame(wx.Frame):
 			#self.axes.autoscale(True)
 			
 
-			def maxa(a1,a2):
-				if(a1.size == 0 and a2.size == 0):
-					return 0
-				elif(a1.size == 0):
-					return a2.max()
-				elif(a2.size==0):
-					return a1.max()
-				else:
-					return max(a1.max(), a2.max())
-
-			def mina(a1,a2):
-				if(a1.size == 0 and a2.size == 0):
-					return 0
-				elif(a1.size == 0):
-					return a2.min()
-				elif(a2.size==0):
-					return a1.min()
-				else:
-					return min(a1.min(), a2.min())
-
-			def meana(a1, a2):
-				if(a1.size == 0 and a2.size == 0):
-					return 0
-				elif(a1.size == 0):
-					return a2.mean()
-				elif(a2.size==0):
-					return a1.mean()
-				else:
-					return 0.5 * (a1.mean() +  a2.mean())
-
-			max_range = np.array([maxa(x1, x2)-mina(x1, x2), maxa(y1, y2)-mina(y1, y2), maxa(z1, z2)-mina(z1, z2)]).max() / 2.0
-			mean_x = meana(x1,x2)
-			mean_y = meana(y1,y2)
-			mean_z = meana(z1,z2)
-			self.axes.set_xlim(mean_x - max_range, mean_x + max_range)
-			self.axes.set_ylim(mean_y - max_range, mean_y + max_range)
-			self.axes.set_zlim(mean_z - max_range, mean_z + max_range)
-
+#			def maxa(a1,a2):
+#				if(a1.size == 0 and a2.size == 0):
+#					return 0
+#				elif(a1.size == 0):
+#					return a2.max()
+#				elif(a2.size==0):
+#					return a1.max()
+#				else:
+#					return max(a1.max(), a2.max())
+#
+#			def mina(a1,a2):
+#				if(a1.size == 0 and a2.size == 0):
+#					return 0
+#				elif(a1.size == 0):
+#					return a2.min()
+#				elif(a2.size==0):
+#					return a1.min()
+#				else:
+#					return min(a1.min(), a2.min())
+#
+#			def meana(a1, a2):
+#				if(a1.size == 0 and a2.size == 0):
+#					return 0
+#				elif(a1.size == 0):
+#					return a2.mean()
+#				elif(a2.size==0):
+#					return a1.mean()
+#				else:
+#					return 0.5 * (a1.mean() +  a2.mean())
+#
+#			max_range = np.array([maxa(x1, x2)-mina(x1, x2), maxa(y1, y2)-mina(y1, y2), maxa(z1, z2)-mina(z1, z2)]).max() / 2.0
+#			mean_x = meana(x1,x2)
+#			mean_y = meana(y1,y2)
+#			mean_z = meana(z1,z2)
+#			self.axes.set_xlim(mean_x - max_range, mean_x + max_range)
+#			self.axes.set_ylim(mean_y - max_range, mean_y + max_range)
+#			self.axes.set_zlim(mean_z - max_range, mean_z + max_range)
+#
 			self.axes.set_title("Model %d" % self.currentModelNumberIndex)
 
 			#self.axes.set_aspect(1)
