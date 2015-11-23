@@ -1028,25 +1028,19 @@ class CanvasFrame(wx.Frame):
 				self.axes.plot(x1, y1, z1,  "o", markersize=MARKERSIZE, picker=1, color=self.objColor[indK])
 
 
-			#use mayavi package?
-			#velInd = np.array(indices) + self.numpart
-			#self.axes.quiver3d(self.data[indices,0] ,  self.data[indices,1], self.data[indices,2], self.data[velInd,0] , self.data[velInd,1], self.data[velInd,2])
-#			#matplotlib 1.4
-#			N = 100
-#			indices = np.array(indices1 + indices2)
-#			#USE MEAN N VALUES
-##			velInd = indices + self.numpart
-##			c1 = self.data[indices,:].reshape(-1, N, 3)
-##			b1 = np.mean(c1, axis=1)
-##			c2 = self.data[velInd,:].reshape(-1, N, 3)
-##			b2 = np.mean(c2, axis=1)
-##			self.axes.quiver(b1[:,0] ,  b1[:,1], b1[:,2], b2[:,0] , b2[:,1], b2[:,2])
-#
-#			#USE EVERY N value
-#			indices = indices[::N]
-#			velInd = indices + self.numpart
-#			self.axes.quiver(self.data[indices,0] ,  self.data[indices,1], self.data[indices,2], self.data[velInd,0] , self.data[velInd,1], self.data[velInd,2])
-#			#end matplotlib 1.4
+		
+#			allInd = np.concatenate(indices.values()) 
+#			velInd = allInd + self.numpart
+#			print(self.data[allInd,0].shape)
+#			print(self.data[velInd,0].shape)
+#			print(self.data[allInd,1].shape)
+#			print(self.data[velInd,1].shape)
+#			print(self.data[allInd,2].shape)
+#			print(self.data[velInd,2].shape)
+#			self.axes.quiver(self.data[allInd,0] ,  self.data[allInd,1], self.data[allInd,2], self.data[velInd,0] , self.data[velInd,1], self.data[velInd,2])
+			
+				
+
 
 
 			self.axes.set_xlabel('x')
