@@ -11,7 +11,6 @@ program hello_world
   call MPI_Comm_rank ( MPI_COMM_WORLD, world_id, error )
 
   if ( world_id == master ) then
-     print*, "I'm the master of ", num_procs, "processes"
      do i  = 1, num_procs-1
       CALL MPI_RECV(rankReceived, 1, MPI_INTEGER, i, tag, MPI_COMM_WORLD, status, ierr)
       print*, "greetings from ", rankReceived

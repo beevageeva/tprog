@@ -12,6 +12,7 @@ program hello_world
   call MPI_Comm_rank ( MPI_COMM_WORLD, world_id, error )
 
   if ( world_id == master ) then
+    print*, 'Intr. number'
     read*, numberMsg
   else
     call mpi_recv(numberMsg, 1, MPI_REAL, world_id - 1 , tag, MPI_COMM_WORLD, status, ierr)
@@ -24,7 +25,7 @@ program hello_world
   end if
   call mpi_send(numberMsg * (world_id + 1), 1, mpi_real, dest, tag, mpi_comm_world, ierr)
 
-
+  !the second if between in case numProcs = 1
   if ( world_id == master ) then
     call mpi_recv(numberMsg, 1, MPI_REAL, num_procs - 1  , tag, MPI_COMM_WORLD, status, ierr)
     print*, "RECEIVED NUMBER " , numberMsg
