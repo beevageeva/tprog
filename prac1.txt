@@ -1,0 +1,18 @@
+Borrado de un nodo en un árbol binario.
+La práctica se basa en lo visto en clase de árboles binarios, y en concreto es el ejercicio 9 de https://campusvirtual.ull.es/1516/mod/page/view.php?id=40521 
+
+Vuestro objetivo último es escribir el código en Fortran que borra un nodo cualquiera de un árbol binario (asumimos que el nodo en cuestión siempre existe, y que los valores del árbol binario son siempre > 0 (excepto la cabeza, que tiene valor 0).
+
+La llamada a la función en el código principal podría ser:
+
+  CALL borra(head,5)   -- indicando que queremos borrar el número 5.
+
+Para hacer más fácil la tarea, en el siguiente enlace de la Wikipedia podéis ver el algoritmo para borrar un nodo cualquiera, y el código en Python http://en.wikipedia.org/wiki/Binary_search_tree#Deletion
+
+Lo que tenéis que entregar es un único fichero de texto con el programa completo y con todos los comentarios que consideréis oportuno para entender el programa. 
+
+No es necesario que el programa funcione correctamente para entregar la práctica. Haced lo que podáis (quizás funciona en algunos casos, pero no en otros ...) y comentad todo lo que podáis sobre posibles fallos, mejoras, etc.
+
+La puntuación de la práctica será en base al propio código (y las explicaciones dadas en él) y al entendimiento del código y del algoritmo que mostréis (me tendréis que explicar el código en una tutoría).
+
+Para hacer más fácil vuestra tarea, el código está parcialmente hecho en http://angel-de-vicente.pastebin.com/KkA0KFyB En este código las funciones a escribir por vosotros serían "in_order_successor", "get_parent" y parte de la subrutina "borra" (ver partes marcadas con !!! ???????????). Notad también que el programa crea siempre el árbol con un nodo "cabeza" con valor 0, que no forma parte del árbol propiamente dicho, pero simplifica la búsqueda del predecesor.

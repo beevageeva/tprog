@@ -1,0 +1,16 @@
+Aplicación en paralelo
+A diferencia de otras tareas anteriores, esta tarea no da unas expecificaciones exactas que has de seguir. Por el contrario, la idea es que tenéis que implementar un algoritmo para resolver un problema en paralelo, y habrá muchas posibles maneras de hacerlo.
+
+El código tendrá que, dada una lista A de números enteros consecutivos desde el 2 hasta N (N será un valor a introducir al código, bien por fichero o por teclado, como prefiráis):
+
+1 - encontrar el valor mínimo de A (a_min) (si a_min > sqrt(N) parar)
+
+2 - borrar todos los múltiplos de a_min en A
+
+3 - volver al paso 1.
+
+Al final, de los valores que queden, imprimir el valor más alto.
+
+-----------------
+
+Como ejemplo, si ejecutamos dicho código con N=120, el valor resultante sería el 113.

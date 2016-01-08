@@ -1,0 +1,7 @@
+dnf install mpich
+#for include header files!
+dnf install mpich-devel
+module avail mpi
+#fucking bug in fedora:
+#for the mpi.mod not found error when use  mpi
+ sudo cp /usr/lib64/gfortran/modules/mpich/* /usr/include/mpich-x86_64/
