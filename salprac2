@@ -1,0 +1,4948 @@
+[beatrice@localhost tprog]$ for i in `seq 10 1000`; do echo $i; echo "$i" | mpirun -np 4 ./prac2; echo "$i" | mpirun -np 4 ./prac2p;  done; 
+10
+ Introduce n:
+ max =            7
+ Introduce n:
+ max =            7
+11
+ Introduce n:
+ max =           11
+ Introduce n:
+ max =           11
+12
+ Introduce n:
+ max =           11
+ Introduce n:
+ max =           11
+13
+ Introduce n:
+ max =           13
+ Introduce n:
+ max =           13
+14
+ Introduce n:
+ max =           13
+ Introduce n:
+ max =           13
+15
+ Introduce n:
+ max =           13
+ Introduce n:
+ max =           13
+16
+ Introduce n:
+ max =           13
+ Introduce n:
+ max =           13
+17
+ Introduce n:
+ max =           17
+ Introduce n:
+ max =           17
+18
+ Introduce n:
+ max =           17
+ Introduce n:
+ max =           17
+19
+ Introduce n:
+ max =           19
+ Introduce n:
+ max =           19
+20
+ Introduce n:
+ max =           19
+ Introduce n:
+ max =           19
+21
+ Introduce n:
+ max =           19
+ Introduce n:
+ max =           19
+22
+ Introduce n:
+ max =           19
+ Introduce n:
+ max =           19
+23
+ Introduce n:
+ max =           23
+ Introduce n:
+ max =           23
+24
+ Introduce n:
+ max =           23
+ Introduce n:
+ max =           23
+25
+ Introduce n:
+ max =           23
+ Introduce n:
+ max =           23
+26
+ Introduce n:
+ max =           23
+ Introduce n:
+ max =           23
+27
+ Introduce n:
+ max =           23
+ Introduce n:
+ max =           23
+28
+ Introduce n:
+ max =           23
+ Introduce n:
+ max =           23
+29
+ Introduce n:
+ max =           29
+ Introduce n:
+ max =           29
+30
+ Introduce n:
+ max =           29
+ Introduce n:
+ max =           29
+31
+ Introduce n:
+ max =           31
+ Introduce n:
+ max =           31
+32
+ Introduce n:
+ max =           31
+ Introduce n:
+ max =           31
+33
+ Introduce n:
+ max =           31
+ Introduce n:
+ max =           31
+34
+ Introduce n:
+ max =           31
+ Introduce n:
+ max =           31
+35
+ Introduce n:
+ max =           31
+ Introduce n:
+ max =           31
+36
+ Introduce n:
+ max =           31
+ Introduce n:
+ max =           31
+37
+ Introduce n:
+ max =           37
+ Introduce n:
+ max =           37
+38
+ Introduce n:
+ max =           37
+ Introduce n:
+ max =           37
+39
+ Introduce n:
+ max =           37
+ Introduce n:
+ max =           37
+40
+ Introduce n:
+ max =           37
+ Introduce n:
+ max =           37
+41
+ Introduce n:
+ max =           41
+ Introduce n:
+ max =           41
+42
+ Introduce n:
+ max =           41
+ Introduce n:
+ max =           41
+43
+ Introduce n:
+ max =           43
+ Introduce n:
+ max =           43
+44
+ Introduce n:
+ max =           43
+ Introduce n:
+ max =           43
+45
+ Introduce n:
+ max =           43
+ Introduce n:
+ max =           43
+46
+ Introduce n:
+ max =           43
+ Introduce n:
+ max =           43
+47
+ Introduce n:
+ max =           47
+ Introduce n:
+ max =           47
+48
+ Introduce n:
+ max =           47
+ Introduce n:
+ max =           47
+49
+ Introduce n:
+ max =           47
+ Introduce n:
+ max =           47
+50
+ Introduce n:
+ max =           47
+ Introduce n:
+ max =           47
+51
+ Introduce n:
+ max =           47
+ Introduce n:
+ max =           47
+52
+ Introduce n:
+ max =           47
+ Introduce n:
+ max =           47
+53
+ Introduce n:
+ max =           53
+ Introduce n:
+ max =           53
+54
+ Introduce n:
+ max =           53
+ Introduce n:
+ max =           53
+55
+ Introduce n:
+ max =           53
+ Introduce n:
+ max =           53
+56
+ Introduce n:
+ max =           53
+ Introduce n:
+ max =           53
+57
+ Introduce n:
+ max =           53
+ Introduce n:
+ max =           53
+58
+ Introduce n:
+ max =           53
+ Introduce n:
+ max =           53
+59
+ Introduce n:
+ max =           59
+ Introduce n:
+ max =           59
+60
+ Introduce n:
+ max =           59
+ Introduce n:
+ max =           59
+61
+ Introduce n:
+ max =           61
+ Introduce n:
+ max =           61
+62
+ Introduce n:
+ max =           61
+ Introduce n:
+ max =           61
+63
+ Introduce n:
+ max =           61
+ Introduce n:
+ max =           61
+64
+ Introduce n:
+ max =           61
+ Introduce n:
+ max =           61
+65
+ Introduce n:
+ max =           61
+ Introduce n:
+ max =           61
+66
+ Introduce n:
+ max =           61
+ Introduce n:
+ max =           61
+67
+ Introduce n:
+ max =           67
+ Introduce n:
+ max =           67
+68
+ Introduce n:
+ max =           67
+ Introduce n:
+ max =           67
+69
+ Introduce n:
+ max =           67
+ Introduce n:
+ max =           67
+70
+ Introduce n:
+ max =           67
+ Introduce n:
+ max =           67
+71
+ Introduce n:
+ max =           71
+ Introduce n:
+ max =           71
+72
+ Introduce n:
+ max =           71
+ Introduce n:
+ max =           71
+73
+ Introduce n:
+ max =           73
+ Introduce n:
+ max =           73
+74
+ Introduce n:
+ max =           73
+ Introduce n:
+ max =           73
+75
+ Introduce n:
+ max =           73
+ Introduce n:
+ max =           73
+76
+ Introduce n:
+ max =           73
+ Introduce n:
+ max =           73
+77
+ Introduce n:
+ max =           73
+ Introduce n:
+ max =           73
+78
+ Introduce n:
+ max =           73
+ Introduce n:
+ max =           73
+79
+ Introduce n:
+ max =           79
+ Introduce n:
+ max =           79
+80
+ Introduce n:
+ max =           79
+ Introduce n:
+ max =           79
+81
+ Introduce n:
+ max =           79
+ Introduce n:
+ max =           79
+82
+ Introduce n:
+ max =           79
+ Introduce n:
+ max =           79
+83
+ Introduce n:
+ max =           83
+ Introduce n:
+ max =           83
+84
+ Introduce n:
+ max =           83
+ Introduce n:
+ max =           83
+85
+ Introduce n:
+ max =           83
+ Introduce n:
+ max =           83
+86
+ Introduce n:
+ max =           83
+ Introduce n:
+ max =           83
+87
+ Introduce n:
+ max =           83
+ Introduce n:
+ max =           83
+88
+ Introduce n:
+ max =           83
+ Introduce n:
+ max =           83
+89
+ Introduce n:
+ max =           89
+ Introduce n:
+ max =           89
+90
+ Introduce n:
+ max =           89
+ Introduce n:
+ max =           89
+91
+ Introduce n:
+ max =           89
+ Introduce n:
+ max =           89
+92
+ Introduce n:
+ max =           89
+ Introduce n:
+ max =           89
+93
+ Introduce n:
+ max =           89
+ Introduce n:
+ max =           89
+94
+ Introduce n:
+ max =           89
+ Introduce n:
+ max =           89
+95
+ Introduce n:
+ max =           89
+ Introduce n:
+ max =           89
+96
+ Introduce n:
+ max =           89
+ Introduce n:
+ max =           89
+97
+ Introduce n:
+ max =           97
+ Introduce n:
+ max =           97
+98
+ Introduce n:
+ max =           97
+ Introduce n:
+ max =           97
+99
+ Introduce n:
+ max =           97
+ Introduce n:
+ max =           97
+100
+ Introduce n:
+ max =           97
+ Introduce n:
+ max =           97
+101
+ Introduce n:
+ max =          101
+ Introduce n:
+ max =          101
+102
+ Introduce n:
+ max =          101
+ Introduce n:
+ max =          101
+103
+ Introduce n:
+ max =          103
+ Introduce n:
+ max =          103
+104
+ Introduce n:
+ max =          103
+ Introduce n:
+ max =          103
+105
+ Introduce n:
+ max =          103
+ Introduce n:
+ max =          103
+106
+ Introduce n:
+ max =          103
+ Introduce n:
+ max =          103
+107
+ Introduce n:
+ max =          107
+ Introduce n:
+ max =          107
+108
+ Introduce n:
+ max =          107
+ Introduce n:
+ max =          107
+109
+ Introduce n:
+ max =          109
+ Introduce n:
+ max =          109
+110
+ Introduce n:
+ max =          109
+ Introduce n:
+ max =          109
+111
+ Introduce n:
+ max =          109
+ Introduce n:
+ max =          109
+112
+ Introduce n:
+ max =          109
+ Introduce n:
+ max =          109
+113
+ Introduce n:
+ max =          113
+ Introduce n:
+ max =          113
+114
+ Introduce n:
+ max =          113
+ Introduce n:
+ max =          113
+115
+ Introduce n:
+ max =          113
+ Introduce n:
+ max =          113
+116
+ Introduce n:
+ max =          113
+ Introduce n:
+ max =          113
+117
+ Introduce n:
+ max =          113
+ Introduce n:
+ max =          113
+118
+ Introduce n:
+ max =          113
+ Introduce n:
+ max =          113
+119
+ Introduce n:
+ max =          113
+ Introduce n:
+ max =          113
+120
+ Introduce n:
+ max =          113
+ Introduce n:
+ max =          113
+121
+ Introduce n:
+ max =          113
+ Introduce n:
+ max =          113
+122
+ Introduce n:
+ max =          113
+ Introduce n:
+ max =          113
+123
+ Introduce n:
+ max =          113
+ Introduce n:
+ max =          113
+124
+ Introduce n:
+ max =          113
+ Introduce n:
+ max =          113
+125
+ Introduce n:
+ max =          113
+ Introduce n:
+ max =          113
+126
+ Introduce n:
+ max =          113
+ Introduce n:
+ max =          113
+127
+ Introduce n:
+ max =          127
+ Introduce n:
+ max =          127
+128
+ Introduce n:
+ max =          127
+ Introduce n:
+ max =          127
+129
+ Introduce n:
+ max =          127
+ Introduce n:
+ max =          127
+130
+ Introduce n:
+ max =          127
+ Introduce n:
+ max =          127
+131
+ Introduce n:
+ max =          131
+ Introduce n:
+ max =          131
+132
+ Introduce n:
+ max =          131
+ Introduce n:
+ max =          131
+133
+ Introduce n:
+ max =          131
+ Introduce n:
+ max =          131
+134
+ Introduce n:
+ max =          131
+ Introduce n:
+ max =          131
+135
+ Introduce n:
+ max =          131
+ Introduce n:
+ max =          131
+136
+ Introduce n:
+ max =          131
+ Introduce n:
+ max =          131
+137
+ Introduce n:
+ max =          137
+ Introduce n:
+ max =          137
+138
+ Introduce n:
+ max =          137
+ Introduce n:
+ max =          137
+139
+ Introduce n:
+ max =          139
+ Introduce n:
+ max =          139
+140
+ Introduce n:
+ max =          139
+ Introduce n:
+ max =          139
+141
+ Introduce n:
+ max =          139
+ Introduce n:
+ max =          139
+142
+ Introduce n:
+ max =          139
+ Introduce n:
+ max =          139
+143
+ Introduce n:
+ max =          139
+ Introduce n:
+ max =          139
+144
+ Introduce n:
+ max =          139
+ Introduce n:
+ max =          139
+145
+ Introduce n:
+ max =          139
+ Introduce n:
+ max =          139
+146
+ Introduce n:
+ max =          139
+ Introduce n:
+ max =          139
+147
+ Introduce n:
+ max =          139
+ Introduce n:
+ max =          139
+148
+ Introduce n:
+ max =          139
+ Introduce n:
+ max =          139
+149
+ Introduce n:
+ max =          149
+ Introduce n:
+ max =          149
+150
+ Introduce n:
+ max =          149
+ Introduce n:
+ max =          149
+151
+ Introduce n:
+ max =          151
+ Introduce n:
+ max =          151
+152
+ Introduce n:
+ max =          151
+ Introduce n:
+ max =          151
+153
+ Introduce n:
+ max =          151
+ Introduce n:
+ max =          151
+154
+ Introduce n:
+ max =          151
+ Introduce n:
+ max =          151
+155
+ Introduce n:
+ max =          151
+ Introduce n:
+ max =          151
+156
+ Introduce n:
+ max =          151
+ Introduce n:
+ max =          151
+157
+ Introduce n:
+ max =          157
+ Introduce n:
+ max =          157
+158
+ Introduce n:
+ max =          157
+ Introduce n:
+ max =          157
+159
+ Introduce n:
+ max =          157
+ Introduce n:
+ max =          157
+160
+ Introduce n:
+ max =          157
+ Introduce n:
+ max =          157
+161
+ Introduce n:
+ max =          157
+ Introduce n:
+ max =          157
+162
+ Introduce n:
+ max =          157
+ Introduce n:
+ max =          157
+163
+ Introduce n:
+ max =          163
+ Introduce n:
+ max =          163
+164
+ Introduce n:
+ max =          163
+ Introduce n:
+ max =          163
+165
+ Introduce n:
+ max =          163
+ Introduce n:
+ max =          163
+166
+ Introduce n:
+ max =          163
+ Introduce n:
+ max =          163
+167
+ Introduce n:
+ max =          167
+ Introduce n:
+ max =          167
+168
+ Introduce n:
+ max =          167
+ Introduce n:
+ max =          167
+169
+ Introduce n:
+ max =          167
+ Introduce n:
+ max =          167
+170
+ Introduce n:
+ max =          167
+ Introduce n:
+ max =          167
+171
+ Introduce n:
+ max =          167
+ Introduce n:
+ max =          167
+172
+ Introduce n:
+ max =          167
+ Introduce n:
+ max =          167
+173
+ Introduce n:
+ max =          173
+ Introduce n:
+ max =          173
+174
+ Introduce n:
+ max =          173
+ Introduce n:
+ max =          173
+175
+ Introduce n:
+ max =          173
+ Introduce n:
+ max =          173
+176
+ Introduce n:
+ max =          173
+ Introduce n:
+ max =          173
+177
+ Introduce n:
+ max =          173
+ Introduce n:
+ max =          173
+178
+ Introduce n:
+ max =          173
+ Introduce n:
+ max =          173
+179
+ Introduce n:
+ max =          179
+ Introduce n:
+ max =          179
+180
+ Introduce n:
+ max =          179
+ Introduce n:
+ max =          179
+181
+ Introduce n:
+ max =          181
+ Introduce n:
+ max =          181
+182
+ Introduce n:
+ max =          181
+ Introduce n:
+ max =          181
+183
+ Introduce n:
+ max =          181
+ Introduce n:
+ max =          181
+184
+ Introduce n:
+ max =          181
+ Introduce n:
+ max =          181
+185
+ Introduce n:
+ max =          181
+ Introduce n:
+ max =          181
+186
+ Introduce n:
+ max =          181
+ Introduce n:
+ max =          181
+187
+ Introduce n:
+ max =          181
+ Introduce n:
+ max =          181
+188
+ Introduce n:
+ max =          181
+ Introduce n:
+ max =          181
+189
+ Introduce n:
+ max =          181
+ Introduce n:
+ max =          181
+190
+ Introduce n:
+ max =          181
+ Introduce n:
+ max =          181
+191
+ Introduce n:
+ max =          191
+ Introduce n:
+ max =          191
+192
+ Introduce n:
+ max =          191
+ Introduce n:
+ max =          191
+193
+ Introduce n:
+ max =          193
+ Introduce n:
+ max =          193
+194
+ Introduce n:
+ max =          193
+ Introduce n:
+ max =          193
+195
+ Introduce n:
+ max =          193
+ Introduce n:
+ max =          193
+196
+ Introduce n:
+ max =          193
+ Introduce n:
+ max =          193
+197
+ Introduce n:
+ max =          197
+ Introduce n:
+ max =          197
+198
+ Introduce n:
+ max =          197
+ Introduce n:
+ max =          197
+199
+ Introduce n:
+ max =          199
+ Introduce n:
+ max =          199
+200
+ Introduce n:
+ max =          199
+ Introduce n:
+ max =          199
+201
+ Introduce n:
+ max =          199
+ Introduce n:
+ max =          199
+202
+ Introduce n:
+ max =          199
+ Introduce n:
+ max =          199
+203
+ Introduce n:
+ max =          199
+ Introduce n:
+ max =          199
+204
+ Introduce n:
+ max =          199
+ Introduce n:
+ max =          199
+205
+ Introduce n:
+ max =          199
+ Introduce n:
+ max =          199
+206
+ Introduce n:
+ max =          199
+ Introduce n:
+ max =          199
+207
+ Introduce n:
+ max =          199
+ Introduce n:
+ max =          199
+208
+ Introduce n:
+ max =          199
+ Introduce n:
+ max =          199
+209
+ Introduce n:
+ max =          199
+ Introduce n:
+ max =          199
+210
+ Introduce n:
+ max =          199
+ Introduce n:
+ max =          199
+211
+ Introduce n:
+ max =          211
+ Introduce n:
+ max =          211
+212
+ Introduce n:
+ max =          211
+ Introduce n:
+ max =          211
+213
+ Introduce n:
+ max =          211
+ Introduce n:
+ max =          211
+214
+ Introduce n:
+ max =          211
+ Introduce n:
+ max =          211
+215
+ Introduce n:
+ max =          211
+ Introduce n:
+ max =          211
+216
+ Introduce n:
+ max =          211
+ Introduce n:
+ max =          211
+217
+ Introduce n:
+ max =          211
+ Introduce n:
+ max =          211
+218
+ Introduce n:
+ max =          211
+ Introduce n:
+ max =          211
+219
+ Introduce n:
+ max =          211
+ Introduce n:
+ max =          211
+220
+ Introduce n:
+ max =          211
+ Introduce n:
+ max =          211
+221
+ Introduce n:
+ max =          211
+ Introduce n:
+ max =          211
+222
+ Introduce n:
+ max =          211
+ Introduce n:
+ max =          211
+223
+ Introduce n:
+ max =          223
+ Introduce n:
+ max =          223
+224
+ Introduce n:
+ max =          223
+ Introduce n:
+ max =          223
+225
+ Introduce n:
+ max =          223
+ Introduce n:
+ max =          223
+226
+ Introduce n:
+ max =          223
+ Introduce n:
+ max =          223
+227
+ Introduce n:
+ max =          227
+ Introduce n:
+ max =          227
+228
+ Introduce n:
+ max =          227
+ Introduce n:
+ max =          227
+229
+ Introduce n:
+ max =          229
+ Introduce n:
+ max =          229
+230
+ Introduce n:
+ max =          229
+ Introduce n:
+ max =          229
+231
+ Introduce n:
+ max =          229
+ Introduce n:
+ max =          229
+232
+ Introduce n:
+ max =          229
+ Introduce n:
+ max =          229
+233
+ Introduce n:
+ max =          233
+ Introduce n:
+ max =          233
+234
+ Introduce n:
+ max =          233
+ Introduce n:
+ max =          233
+235
+ Introduce n:
+ max =          233
+ Introduce n:
+ max =          233
+236
+ Introduce n:
+ max =          233
+ Introduce n:
+ max =          233
+237
+ Introduce n:
+ max =          233
+ Introduce n:
+ max =          233
+238
+ Introduce n:
+ max =          233
+ Introduce n:
+ max =          233
+239
+ Introduce n:
+ max =          239
+ Introduce n:
+ max =          239
+240
+ Introduce n:
+ max =          239
+ Introduce n:
+ max =          239
+241
+ Introduce n:
+ max =          241
+ Introduce n:
+ max =          241
+242
+ Introduce n:
+ max =          241
+ Introduce n:
+ max =          241
+243
+ Introduce n:
+ max =          241
+ Introduce n:
+ max =          241
+244
+ Introduce n:
+ max =          241
+ Introduce n:
+ max =          241
+245
+ Introduce n:
+ max =          241
+ Introduce n:
+ max =          241
+246
+ Introduce n:
+ max =          241
+ Introduce n:
+ max =          241
+247
+ Introduce n:
+ max =          241
+ Introduce n:
+ max =          241
+248
+ Introduce n:
+ max =          241
+ Introduce n:
+ max =          241
+249
+ Introduce n:
+ max =          241
+ Introduce n:
+ max =          241
+250
+ Introduce n:
+ max =          241
+ Introduce n:
+ max =          241
+251
+ Introduce n:
+ max =          251
+ Introduce n:
+ max =          251
+252
+ Introduce n:
+ max =          251
+ Introduce n:
+ max =          251
+253
+ Introduce n:
+ max =          251
+ Introduce n:
+ max =          251
+254
+ Introduce n:
+ max =          251
+ Introduce n:
+ max =          251
+255
+ Introduce n:
+ max =          251
+ Introduce n:
+ max =          251
+256
+ Introduce n:
+ Introduce n:
+ max =          251
+257
+ Introduce n:
+ max =          257
+ Introduce n:
+ max =          257
+258
+ Introduce n:
+ max =          257
+ Introduce n:
+ max =          257
+259
+ Introduce n:
+ max =          257
+ Introduce n:
+ max =          257
+260
+ Introduce n:
+ max =          257
+ Introduce n:
+ max =          257
+261
+ Introduce n:
+ max =          257
+ Introduce n:
+ max =          257
+262
+ Introduce n:
+ max =          257
+ Introduce n:
+ max =          257
+263
+ Introduce n:
+ max =          263
+ Introduce n:
+ max =          263
+264
+ Introduce n:
+ max =          263
+ Introduce n:
+ max =          263
+265
+ Introduce n:
+ max =          263
+ Introduce n:
+ max =          263
+266
+ Introduce n:
+ max =          263
+ Introduce n:
+ max =          263
+267
+ Introduce n:
+ max =          263
+ Introduce n:
+ max =          263
+268
+ Introduce n:
+ max =          263
+ Introduce n:
+ max =          263
+269
+ Introduce n:
+ max =          269
+ Introduce n:
+ max =          269
+270
+ Introduce n:
+ max =          269
+ Introduce n:
+ max =          269
+271
+ Introduce n:
+ max =          271
+ Introduce n:
+ max =          271
+272
+ Introduce n:
+ max =          271
+ Introduce n:
+ max =          271
+273
+ Introduce n:
+ max =          271
+ Introduce n:
+ max =          271
+274
+ Introduce n:
+ max =          271
+ Introduce n:
+ max =          271
+275
+ Introduce n:
+ max =          271
+ Introduce n:
+ max =          271
+276
+ Introduce n:
+ max =          271
+ Introduce n:
+ max =          271
+277
+ Introduce n:
+ max =          277
+ Introduce n:
+ max =          277
+278
+ Introduce n:
+ max =          277
+ Introduce n:
+ max =          277
+279
+ Introduce n:
+ Introduce n:
+ max =          277
+280
+ Introduce n:
+ max =          277
+ Introduce n:
+ max =          277
+281
+ Introduce n:
+ max =          281
+ Introduce n:
+ max =          281
+282
+ Introduce n:
+ max =          281
+ Introduce n:
+ max =          281
+283
+ Introduce n:
+ max =          283
+ Introduce n:
+ max =          283
+284
+ Introduce n:
+ max =          283
+ Introduce n:
+ max =          283
+285
+ Introduce n:
+ max =          283
+ Introduce n:
+ max =          283
+286
+ Introduce n:
+ max =          283
+ Introduce n:
+ max =          283
+287
+ Introduce n:
+ max =          283
+ Introduce n:
+ max =          283
+288
+ Introduce n:
+ max =          283
+ Introduce n:
+ max =          283
+289
+ Introduce n:
+ max =          283
+ Introduce n:
+ max =          283
+290
+ Introduce n:
+ max =          283
+ Introduce n:
+ max =          283
+291
+ Introduce n:
+ max =          283
+ Introduce n:
+ max =          283
+292
+ Introduce n:
+ max =          283
+ Introduce n:
+ max =          283
+293
+ Introduce n:
+ max =          293
+ Introduce n:
+ max =          293
+294
+ Introduce n:
+ max =          293
+ Introduce n:
+ max =          293
+295
+ Introduce n:
+ max =          293
+ Introduce n:
+ max =          293
+296
+ Introduce n:
+ max =          293
+ Introduce n:
+ max =          293
+297
+ Introduce n:
+ max =          293
+ Introduce n:
+ max =          293
+298
+ Introduce n:
+ max =          293
+ Introduce n:
+ max =          293
+299
+ Introduce n:
+ max =          293
+ Introduce n:
+ max =          293
+300
+ Introduce n:
+ max =          293
+ Introduce n:
+ max =          293
+301
+ Introduce n:
+ max =          293
+ Introduce n:
+ max =          293
+302
+ Introduce n:
+ max =          293
+ Introduce n:
+ max =          293
+303
+ Introduce n:
+ max =          293
+ Introduce n:
+ max =          293
+304
+ Introduce n:
+ max =          293
+ Introduce n:
+ max =          293
+305
+ Introduce n:
+ max =          293
+ Introduce n:
+ max =          293
+306
+ Introduce n:
+ max =          293
+ Introduce n:
+ max =          293
+307
+ Introduce n:
+ max =          307
+ Introduce n:
+ max =          307
+308
+ Introduce n:
+ max =          307
+ Introduce n:
+ max =          307
+309
+ Introduce n:
+ max =          307
+ Introduce n:
+ max =          307
+310
+ Introduce n:
+ max =          307
+ Introduce n:
+ max =          307
+311
+ Introduce n:
+ max =          311
+ Introduce n:
+ max =          311
+312
+ Introduce n:
+ max =          311
+ Introduce n:
+ max =          311
+313
+ Introduce n:
+ max =          313
+ Introduce n:
+ max =          313
+314
+ Introduce n:
+ max =          313
+ Introduce n:
+ max =          313
+315
+ Introduce n:
+ max =          313
+ Introduce n:
+ max =          313
+316
+ Introduce n:
+ max =          313
+ Introduce n:
+ max =          313
+317
+ Introduce n:
+ max =          317
+ Introduce n:
+ max =          317
+318
+ Introduce n:
+ max =          317
+ Introduce n:
+ max =          317
+319
+ Introduce n:
+ max =          317
+ Introduce n:
+ max =          317
+320
+ Introduce n:
+ max =          317
+ Introduce n:
+ max =          317
+321
+ Introduce n:
+ max =          317
+ Introduce n:
+ max =          317
+322
+ Introduce n:
+ max =          317
+ Introduce n:
+ max =          317
+323
+ Introduce n:
+ max =          317
+ Introduce n:
+ max =          317
+324
+ Introduce n:
+ max =          317
+ Introduce n:
+ max =          317
+325
+ Introduce n:
+ max =          317
+ Introduce n:
+ max =          317
+326
+ Introduce n:
+ max =          317
+ Introduce n:
+ max =          317
+327
+ Introduce n:
+ max =          317
+ Introduce n:
+ max =          317
+328
+ Introduce n:
+ max =          317
+ Introduce n:
+ max =          317
+329
+ Introduce n:
+ max =          317
+ Introduce n:
+ max =          317
+330
+ Introduce n:
+ max =          317
+ Introduce n:
+ max =          317
+331
+ Introduce n:
+ max =          331
+ Introduce n:
+ max =          331
+332
+ Introduce n:
+ max =          331
+ Introduce n:
+ max =          331
+333
+ Introduce n:
+ max =          331
+ Introduce n:
+ max =          331
+334
+ Introduce n:
+ max =          331
+ Introduce n:
+ max =          331
+335
+ Introduce n:
+ max =          331
+ Introduce n:
+ max =          331
+336
+ Introduce n:
+ max =          331
+ Introduce n:
+ max =          331
+337
+ Introduce n:
+ max =          337
+ Introduce n:
+ max =          337
+338
+ Introduce n:
+ max =          337
+ Introduce n:
+ max =          337
+339
+ Introduce n:
+ max =          337
+ Introduce n:
+ max =          337
+340
+ Introduce n:
+ max =          337
+ Introduce n:
+ max =          337
+341
+ Introduce n:
+ max =          337
+ Introduce n:
+ max =          337
+342
+ Introduce n:
+ max =          337
+ Introduce n:
+ max =          337
+343
+ Introduce n:
+ max =          337
+ Introduce n:
+ max =          337
+344
+ Introduce n:
+ max =          337
+ Introduce n:
+ max =          337
+345
+ Introduce n:
+ max =          337
+ Introduce n:
+ max =          337
+346
+ Introduce n:
+ max =          337
+ Introduce n:
+ max =          337
+347
+ Introduce n:
+ max =          347
+ Introduce n:
+ max =          347
+348
+ Introduce n:
+ max =          347
+ Introduce n:
+ max =          347
+349
+ Introduce n:
+ max =          349
+ Introduce n:
+ max =          349
+350
+ Introduce n:
+ max =          349
+ Introduce n:
+ max =          349
+351
+ Introduce n:
+ max =          349
+ Introduce n:
+ max =          349
+352
+ Introduce n:
+ max =          349
+ Introduce n:
+ max =          349
+353
+ Introduce n:
+ max =          353
+ Introduce n:
+ max =          353
+354
+ Introduce n:
+ max =          353
+ Introduce n:
+ max =          353
+355
+ Introduce n:
+ max =          353
+ Introduce n:
+ max =          353
+356
+ Introduce n:
+ max =          353
+ Introduce n:
+ max =          353
+357
+ Introduce n:
+ max =          353
+ Introduce n:
+ max =          353
+358
+ Introduce n:
+ max =          353
+ Introduce n:
+ max =          353
+359
+ Introduce n:
+ max =          359
+ Introduce n:
+ max =          359
+360
+ Introduce n:
+ max =          359
+ Introduce n:
+ max =          359
+361
+ Introduce n:
+ max =          359
+ Introduce n:
+ max =          359
+362
+ Introduce n:
+ max =          359
+ Introduce n:
+ max =          359
+363
+ Introduce n:
+ max =          359
+ Introduce n:
+ max =          359
+364
+ Introduce n:
+ max =          359
+ Introduce n:
+ max =          359
+365
+ Introduce n:
+ max =          359
+ Introduce n:
+ max =          359
+366
+ Introduce n:
+ max =          359
+ Introduce n:
+ max =          359
+367
+ Introduce n:
+ max =          367
+ Introduce n:
+ max =          367
+368
+ Introduce n:
+ max =          367
+ Introduce n:
+ max =          367
+369
+ Introduce n:
+ max =          367
+ Introduce n:
+ max =          367
+370
+ Introduce n:
+ max =          367
+ Introduce n:
+ max =          367
+371
+ Introduce n:
+ max =          367
+ Introduce n:
+ max =          367
+372
+ Introduce n:
+ max =          367
+ Introduce n:
+ max =          367
+373
+ Introduce n:
+ max =          373
+ Introduce n:
+ max =          373
+374
+ Introduce n:
+ max =          373
+ Introduce n:
+ max =          373
+375
+ Introduce n:
+ max =          373
+ Introduce n:
+ max =          373
+376
+ Introduce n:
+ max =          373
+ Introduce n:
+ max =          373
+377
+ Introduce n:
+ max =          373
+ Introduce n:
+ max =          373
+378
+ Introduce n:
+ max =          373
+ Introduce n:
+ max =          373
+379
+ Introduce n:
+ max =          379
+ Introduce n:
+ max =          379
+380
+ Introduce n:
+ max =          379
+ Introduce n:
+ max =          379
+381
+ Introduce n:
+ max =          379
+ Introduce n:
+ max =          379
+382
+ Introduce n:
+ max =          379
+ Introduce n:
+ max =          379
+383
+ Introduce n:
+ max =          383
+ Introduce n:
+ max =          383
+384
+ Introduce n:
+ max =          383
+ Introduce n:
+ max =          383
+385
+ Introduce n:
+ max =          383
+ Introduce n:
+ max =          383
+386
+ Introduce n:
+ max =          383
+ Introduce n:
+ max =          383
+387
+ Introduce n:
+ max =          383
+ Introduce n:
+ max =          383
+388
+ Introduce n:
+ max =          383
+ Introduce n:
+ max =          383
+389
+ Introduce n:
+ max =          389
+ Introduce n:
+ max =          389
+390
+ Introduce n:
+ max =          389
+ Introduce n:
+ max =          389
+391
+ Introduce n:
+ max =          389
+ Introduce n:
+ max =          389
+392
+ Introduce n:
+ max =          389
+ Introduce n:
+ max =          389
+393
+ Introduce n:
+ max =          389
+ Introduce n:
+ max =          389
+394
+ Introduce n:
+ max =          389
+ Introduce n:
+ max =          389
+395
+ Introduce n:
+ max =          389
+ Introduce n:
+ max =          389
+396
+ Introduce n:
+ max =          389
+ Introduce n:
+ max =          389
+397
+ Introduce n:
+ max =          397
+ Introduce n:
+ max =          397
+398
+ Introduce n:
+ max =          397
+ Introduce n:
+ max =          397
+399
+ Introduce n:
+ max =          397
+ Introduce n:
+ max =          397
+400
+ Introduce n:
+ max =          397
+ Introduce n:
+ max =          397
+401
+ Introduce n:
+ max =          401
+ Introduce n:
+ max =          401
+402
+ Introduce n:
+ max =          401
+ Introduce n:
+ max =          401
+403
+ Introduce n:
+ max =          401
+ Introduce n:
+ max =          401
+404
+ Introduce n:
+ max =          401
+ Introduce n:
+ max =          401
+405
+ Introduce n:
+ max =          401
+ Introduce n:
+ max =          401
+406
+ Introduce n:
+ max =          401
+ Introduce n:
+ max =          401
+407
+ Introduce n:
+ max =          401
+ Introduce n:
+ max =          401
+408
+ Introduce n:
+ max =          401
+ Introduce n:
+ max =          401
+409
+ Introduce n:
+ max =          409
+ Introduce n:
+ max =          409
+410
+ Introduce n:
+ max =          409
+ Introduce n:
+ max =          409
+411
+ Introduce n:
+ max =          409
+ Introduce n:
+ max =          409
+412
+ Introduce n:
+ max =          409
+ Introduce n:
+ max =          409
+413
+ Introduce n:
+ max =          409
+ Introduce n:
+ max =          409
+414
+ Introduce n:
+ max =          409
+ Introduce n:
+ max =          409
+415
+ Introduce n:
+ max =          409
+ Introduce n:
+ max =          409
+416
+ Introduce n:
+ max =          409
+ Introduce n:
+ max =          409
+417
+ Introduce n:
+ max =          409
+ Introduce n:
+ max =          409
+418
+ Introduce n:
+ max =          409
+ Introduce n:
+ max =          409
+419
+ Introduce n:
+ max =          419
+ Introduce n:
+ max =          419
+420
+ Introduce n:
+ max =          419
+ Introduce n:
+ max =          419
+421
+ Introduce n:
+ max =          421
+ Introduce n:
+ max =          421
+422
+ Introduce n:
+ max =          421
+ Introduce n:
+ max =          421
+423
+ Introduce n:
+ max =          421
+ Introduce n:
+ max =          421
+424
+ Introduce n:
+ max =          421
+ Introduce n:
+ max =          421
+425
+ Introduce n:
+ max =          421
+ Introduce n:
+ max =          421
+426
+ Introduce n:
+ max =          421
+ Introduce n:
+ max =          421
+427
+ Introduce n:
+ max =          421
+ Introduce n:
+ max =          421
+428
+ Introduce n:
+ max =          421
+ Introduce n:
+ max =          421
+429
+ Introduce n:
+ max =          421
+ Introduce n:
+ max =          421
+430
+ Introduce n:
+ max =          421
+ Introduce n:
+ max =          421
+431
+ Introduce n:
+ max =          431
+ Introduce n:
+ max =          431
+432
+ Introduce n:
+ max =          431
+ Introduce n:
+ max =          431
+433
+ Introduce n:
+ max =          433
+ Introduce n:
+ max =          433
+434
+ Introduce n:
+ max =          433
+ Introduce n:
+ max =          433
+435
+ Introduce n:
+ Introduce n:
+ max =          433
+436
+ Introduce n:
+ max =          433
+ Introduce n:
+ max =          433
+437
+ Introduce n:
+ max =          433
+ Introduce n:
+ max =          433
+438
+ Introduce n:
+ max =          433
+ Introduce n:
+ max =          433
+439
+ Introduce n:
+ max =          439
+ Introduce n:
+ max =          439
+440
+ Introduce n:
+ max =          439
+ Introduce n:
+ max =          439
+441
+ Introduce n:
+ max =          439
+ Introduce n:
+ max =          439
+442
+ Introduce n:
+ max =          439
+ Introduce n:
+ max =          439
+443
+ Introduce n:
+ max =          443
+ Introduce n:
+ max =          443
+444
+ Introduce n:
+ max =          443
+ Introduce n:
+ max =          443
+445
+ Introduce n:
+ max =          443
+ Introduce n:
+ max =          443
+446
+ Introduce n:
+ max =          443
+ Introduce n:
+ max =          443
+447
+ Introduce n:
+ max =          443
+ Introduce n:
+ max =          443
+448
+ Introduce n:
+ max =          443
+ Introduce n:
+ max =          443
+449
+ Introduce n:
+ max =          449
+ Introduce n:
+ max =          449
+450
+ Introduce n:
+ max =          449
+ Introduce n:
+ max =          449
+451
+ Introduce n:
+ max =          449
+ Introduce n:
+ max =          449
+452
+ Introduce n:
+ max =          449
+ Introduce n:
+ max =          449
+453
+ Introduce n:
+ max =          449
+ Introduce n:
+ max =          449
+454
+ Introduce n:
+ max =          449
+ Introduce n:
+ max =          449
+455
+ Introduce n:
+ max =          449
+ Introduce n:
+ max =          449
+456
+ Introduce n:
+ max =          449
+ Introduce n:
+ max =          449
+457
+ Introduce n:
+ max =          457
+ Introduce n:
+ max =          457
+458
+ Introduce n:
+ max =          457
+ Introduce n:
+ max =          457
+459
+ Introduce n:
+ max =          457
+ Introduce n:
+ max =          457
+460
+ Introduce n:
+ max =          457
+ Introduce n:
+ max =          457
+461
+ Introduce n:
+ max =          461
+ Introduce n:
+ max =          461
+462
+ Introduce n:
+ max =          461
+ Introduce n:
+ max =          461
+463
+ Introduce n:
+ max =          463
+ Introduce n:
+ max =          463
+464
+ Introduce n:
+ max =          463
+ Introduce n:
+ max =          463
+465
+ Introduce n:
+ max =          463
+ Introduce n:
+ max =          463
+466
+ Introduce n:
+ max =          463
+ Introduce n:
+ max =          463
+467
+ Introduce n:
+ max =          467
+ Introduce n:
+ max =          467
+468
+ Introduce n:
+ max =          467
+ Introduce n:
+ max =          467
+469
+ Introduce n:
+ max =          467
+ Introduce n:
+ max =          467
+470
+ Introduce n:
+ max =          467
+ Introduce n:
+ max =          467
+471
+ Introduce n:
+ max =          467
+ Introduce n:
+ max =          467
+472
+ Introduce n:
+ max =          467
+ Introduce n:
+ max =          467
+473
+ Introduce n:
+ max =          467
+ Introduce n:
+ max =          467
+474
+ Introduce n:
+ max =          467
+ Introduce n:
+ max =          467
+475
+ Introduce n:
+ max =          467
+ Introduce n:
+ max =          467
+476
+ Introduce n:
+ max =          467
+ Introduce n:
+ max =          467
+477
+ Introduce n:
+ max =          467
+ Introduce n:
+ max =          467
+478
+ Introduce n:
+ max =          467
+ Introduce n:
+ max =          467
+479
+ Introduce n:
+ max =          479
+ Introduce n:
+ max =          479
+480
+ Introduce n:
+ max =          479
+ Introduce n:
+ max =          479
+481
+ Introduce n:
+ max =          479
+ Introduce n:
+ max =          479
+482
+ Introduce n:
+ max =          479
+ Introduce n:
+ max =          479
+483
+ Introduce n:
+ max =          479
+ Introduce n:
+ max =          479
+484
+ Introduce n:
+ max =          479
+ Introduce n:
+ max =          479
+485
+ Introduce n:
+ max =          479
+ Introduce n:
+ max =          479
+486
+ Introduce n:
+ max =          479
+ Introduce n:
+ max =          479
+487
+ Introduce n:
+ max =          487
+ Introduce n:
+ max =          487
+488
+ Introduce n:
+ max =          487
+ Introduce n:
+ max =          487
+489
+ Introduce n:
+ max =          487
+ Introduce n:
+ max =          487
+490
+ Introduce n:
+ max =          487
+ Introduce n:
+ max =          487
+491
+ Introduce n:
+ max =          491
+ Introduce n:
+ max =          491
+492
+ Introduce n:
+ max =          491
+ Introduce n:
+ max =          491
+493
+ Introduce n:
+ max =          491
+ Introduce n:
+ max =          491
+494
+ Introduce n:
+ max =          491
+ Introduce n:
+ max =          491
+495
+ Introduce n:
+ max =          491
+ Introduce n:
+ max =          491
+496
+ Introduce n:
+ max =          491
+ Introduce n:
+ max =          491
+497
+ Introduce n:
+ max =          491
+ Introduce n:
+ max =          491
+498
+ Introduce n:
+ max =          491
+ Introduce n:
+ max =          491
+499
+ Introduce n:
+ max =          499
+ Introduce n:
+ max =          499
+500
+ Introduce n:
+ max =          499
+ Introduce n:
+ max =          499
+501
+ Introduce n:
+ max =          499
+ Introduce n:
+ max =          499
+502
+ Introduce n:
+ max =          499
+ Introduce n:
+ max =          499
+503
+ Introduce n:
+ max =          503
+ Introduce n:
+ max =          503
+504
+ Introduce n:
+ max =          503
+ Introduce n:
+ max =          503
+505
+ Introduce n:
+ max =          503
+ Introduce n:
+ max =          503
+506
+ Introduce n:
+ max =          503
+ Introduce n:
+ max =          503
+507
+ Introduce n:
+ max =          503
+ Introduce n:
+ max =          503
+508
+ Introduce n:
+ max =          503
+ Introduce n:
+ max =          503
+509
+ Introduce n:
+ max =          509
+ Introduce n:
+ max =          509
+510
+ Introduce n:
+ max =          509
+ Introduce n:
+ max =          509
+511
+ Introduce n:
+ max =          509
+ Introduce n:
+ max =          509
+512
+ Introduce n:
+ max =          509
+ Introduce n:
+ max =          509
+513
+ Introduce n:
+ max =          509
+ Introduce n:
+ max =          509
+514
+ Introduce n:
+ max =          509
+ Introduce n:
+ max =          509
+515
+ Introduce n:
+ max =          509
+ Introduce n:
+ max =          509
+516
+ Introduce n:
+ max =          509
+ Introduce n:
+ max =          509
+517
+ Introduce n:
+ max =          509
+ Introduce n:
+ max =          509
+518
+ Introduce n:
+ max =          509
+ Introduce n:
+ max =          509
+519
+ Introduce n:
+ max =          509
+ Introduce n:
+ max =          509
+520
+ Introduce n:
+ max =          509
+ Introduce n:
+ max =          509
+521
+ Introduce n:
+ max =          521
+ Introduce n:
+ max =          521
+522
+ Introduce n:
+ max =          521
+ Introduce n:
+ max =          521
+523
+ Introduce n:
+ max =          523
+ Introduce n:
+ max =          523
+524
+ Introduce n:
+ max =          523
+ Introduce n:
+ max =          523
+525
+ Introduce n:
+ max =          523
+ Introduce n:
+ max =          523
+526
+ Introduce n:
+ max =          523
+ Introduce n:
+ max =          523
+527
+ Introduce n:
+ max =          523
+ Introduce n:
+ max =          523
+528
+ Introduce n:
+ max =          523
+ Introduce n:
+ max =          523
+529
+ Introduce n:
+ max =          523
+ Introduce n:
+ max =          523
+530
+ Introduce n:
+ max =          523
+ Introduce n:
+ max =          523
+531
+ Introduce n:
+ max =          523
+ Introduce n:
+ max =          523
+532
+ Introduce n:
+ max =          523
+ Introduce n:
+ max =          523
+533
+ Introduce n:
+ max =          523
+ Introduce n:
+ max =          523
+534
+ Introduce n:
+ max =          523
+ Introduce n:
+ max =          523
+535
+ Introduce n:
+ max =          523
+ Introduce n:
+ max =          523
+536
+ Introduce n:
+ max =          523
+ Introduce n:
+ max =          523
+537
+ Introduce n:
+ max =          523
+ Introduce n:
+ max =          523
+538
+ Introduce n:
+ max =          523
+ Introduce n:
+ max =          523
+539
+ Introduce n:
+ max =          523
+ Introduce n:
+ max =          523
+540
+ Introduce n:
+ max =          523
+ Introduce n:
+ max =          523
+541
+ Introduce n:
+ max =          541
+ Introduce n:
+ max =          541
+542
+ Introduce n:
+ max =          541
+ Introduce n:
+ max =          541
+543
+ Introduce n:
+ max =          541
+ Introduce n:
+ max =          541
+544
+ Introduce n:
+ max =          541
+ Introduce n:
+ max =          541
+545
+ Introduce n:
+ max =          541
+ Introduce n:
+ max =          541
+546
+ Introduce n:
+ max =          541
+ Introduce n:
+ max =          541
+547
+ Introduce n:
+ max =          547
+ Introduce n:
+ max =          547
+548
+ Introduce n:
+ max =          547
+ Introduce n:
+ max =          547
+549
+ Introduce n:
+ max =          547
+ Introduce n:
+ max =          547
+550
+ Introduce n:
+ max =          547
+ Introduce n:
+ max =          547
+551
+ Introduce n:
+ max =          547
+ Introduce n:
+ max =          547
+552
+ Introduce n:
+ max =          547
+ Introduce n:
+ max =          547
+553
+ Introduce n:
+ max =          547
+ Introduce n:
+ max =          547
+554
+ Introduce n:
+ max =          547
+ Introduce n:
+ max =          547
+555
+ Introduce n:
+ max =          547
+ Introduce n:
+ max =          547
+556
+ Introduce n:
+ max =          547
+ Introduce n:
+ max =          547
+557
+ Introduce n:
+ max =          557
+ Introduce n:
+ max =          557
+558
+ Introduce n:
+ max =          557
+ Introduce n:
+ max =          557
+559
+ Introduce n:
+ max =          557
+ Introduce n:
+ max =          557
+560
+ Introduce n:
+ max =          557
+ Introduce n:
+ max =          557
+561
+ Introduce n:
+ max =          557
+ Introduce n:
+ max =          557
+562
+ Introduce n:
+ max =          557
+ Introduce n:
+ max =          557
+563
+ Introduce n:
+ max =          563
+ Introduce n:
+ max =          563
+564
+ Introduce n:
+ max =          563
+ Introduce n:
+ max =          563
+565
+ Introduce n:
+ max =          563
+ Introduce n:
+ max =          563
+566
+ Introduce n:
+ max =          563
+ Introduce n:
+ max =          563
+567
+ Introduce n:
+ max =          563
+ Introduce n:
+ max =          563
+568
+ Introduce n:
+ max =          563
+ Introduce n:
+ max =          563
+569
+ Introduce n:
+ max =          569
+ Introduce n:
+ max =          569
+570
+ Introduce n:
+ max =          569
+ Introduce n:
+ max =          569
+571
+ Introduce n:
+ max =          571
+ Introduce n:
+ max =          571
+572
+ Introduce n:
+ max =          571
+ Introduce n:
+ max =          571
+573
+ Introduce n:
+ max =          571
+ Introduce n:
+ max =          571
+574
+ Introduce n:
+ max =          571
+ Introduce n:
+ max =          571
+575
+ Introduce n:
+ max =          571
+ Introduce n:
+ max =          571
+576
+ Introduce n:
+ max =          571
+ Introduce n:
+ max =          571
+577
+ Introduce n:
+ max =          577
+ Introduce n:
+ max =          577
+578
+ Introduce n:
+ max =          577
+ Introduce n:
+ max =          577
+579
+ Introduce n:
+ max =          577
+ Introduce n:
+ max =          577
+580
+ Introduce n:
+ max =          577
+ Introduce n:
+ max =          577
+581
+ Introduce n:
+ max =          577
+ Introduce n:
+ max =          577
+582
+ Introduce n:
+ max =          577
+ Introduce n:
+ max =          577
+583
+ Introduce n:
+ max =          577
+ Introduce n:
+ max =          577
+584
+ Introduce n:
+ max =          577
+ Introduce n:
+ max =          577
+585
+ Introduce n:
+ max =          577
+ Introduce n:
+ max =          577
+586
+ Introduce n:
+ max =          577
+ Introduce n:
+ max =          577
+587
+ Introduce n:
+ max =          587
+ Introduce n:
+ max =          587
+588
+ Introduce n:
+ max =          587
+ Introduce n:
+ max =          587
+589
+ Introduce n:
+ max =          587
+ Introduce n:
+ max =          587
+590
+ Introduce n:
+ max =          587
+ Introduce n:
+ max =          587
+591
+ Introduce n:
+ max =          587
+ Introduce n:
+ max =          587
+592
+ Introduce n:
+ max =          587
+ Introduce n:
+ max =          587
+593
+ Introduce n:
+ max =          593
+ Introduce n:
+ max =          593
+594
+ Introduce n:
+ max =          593
+ Introduce n:
+ max =          593
+595
+ Introduce n:
+ max =          593
+ Introduce n:
+ max =          593
+596
+ Introduce n:
+ max =          593
+ Introduce n:
+ max =          593
+597
+ Introduce n:
+ max =          593
+ Introduce n:
+ max =          593
+598
+ Introduce n:
+ max =          593
+ Introduce n:
+ max =          593
+599
+ Introduce n:
+ max =          599
+ Introduce n:
+ max =          599
+600
+ Introduce n:
+ max =          599
+ Introduce n:
+ max =          599
+601
+ Introduce n:
+ max =          601
+ Introduce n:
+ max =          601
+602
+ Introduce n:
+ max =          601
+ Introduce n:
+ max =          601
+603
+ Introduce n:
+ max =          601
+ Introduce n:
+ max =          601
+604
+ Introduce n:
+ max =          601
+ Introduce n:
+ max =          601
+605
+ Introduce n:
+ max =          601
+ Introduce n:
+ max =          601
+606
+ Introduce n:
+ max =          601
+ Introduce n:
+ max =          601
+607
+ Introduce n:
+ max =          607
+ Introduce n:
+ max =          607
+608
+ Introduce n:
+ max =          607
+ Introduce n:
+ max =          607
+609
+ Introduce n:
+ max =          607
+ Introduce n:
+ max =          607
+610
+ Introduce n:
+ max =          607
+ Introduce n:
+ max =          607
+611
+ Introduce n:
+ max =          607
+ Introduce n:
+ max =          607
+612
+ Introduce n:
+ max =          607
+ Introduce n:
+ max =          607
+613
+ Introduce n:
+ max =          613
+ Introduce n:
+ max =          613
+614
+ Introduce n:
+ max =          613
+ Introduce n:
+ max =          613
+615
+ Introduce n:
+ max =          613
+ Introduce n:
+ max =          613
+616
+ Introduce n:
+ max =          613
+ Introduce n:
+ max =          613
+617
+ Introduce n:
+ max =          617
+ Introduce n:
+ max =          617
+618
+ Introduce n:
+ max =          617
+ Introduce n:
+ max =          617
+619
+ Introduce n:
+ max =          619
+ Introduce n:
+ max =          619
+620
+ Introduce n:
+ max =          619
+ Introduce n:
+ max =          619
+621
+ Introduce n:
+ max =          619
+ Introduce n:
+ max =          619
+622
+ Introduce n:
+ max =          619
+ Introduce n:
+ max =          619
+623
+ Introduce n:
+ max =          619
+ Introduce n:
+ max =          619
+624
+ Introduce n:
+ max =          619
+ Introduce n:
+ max =          619
+625
+ Introduce n:
+ max =          619
+ Introduce n:
+ max =          619
+626
+ Introduce n:
+ max =          619
+ Introduce n:
+ max =          619
+627
+ Introduce n:
+ max =          619
+ Introduce n:
+ max =          619
+628
+ Introduce n:
+ max =          619
+ Introduce n:
+ max =          619
+629
+ Introduce n:
+ max =          619
+ Introduce n:
+ max =          619
+630
+ Introduce n:
+ max =          619
+ Introduce n:
+ max =          619
+631
+ Introduce n:
+ max =          631
+ Introduce n:
+ max =          631
+632
+ Introduce n:
+ max =          631
+ Introduce n:
+ max =          631
+633
+ Introduce n:
+ max =          631
+ Introduce n:
+ max =          631
+634
+ Introduce n:
+ max =          631
+ Introduce n:
+ max =          631
+635
+ Introduce n:
+ max =          631
+ Introduce n:
+ max =          631
+636
+ Introduce n:
+ max =          631
+ Introduce n:
+ max =          631
+637
+ Introduce n:
+ max =          631
+ Introduce n:
+ max =          631
+638
+ Introduce n:
+ max =          631
+ Introduce n:
+ max =          631
+639
+ Introduce n:
+ max =          631
+ Introduce n:
+ max =          631
+640
+ Introduce n:
+ max =          631
+ Introduce n:
+ max =          631
+641
+ Introduce n:
+ max =          641
+ Introduce n:
+ max =          641
+642
+ Introduce n:
+ max =          641
+ Introduce n:
+ max =          641
+643
+ Introduce n:
+ max =          643
+ Introduce n:
+ max =          643
+644
+ Introduce n:
+ max =          643
+ Introduce n:
+ max =          643
+645
+ Introduce n:
+ max =          643
+ Introduce n:
+ max =          643
+646
+ Introduce n:
+ max =          643
+ Introduce n:
+ max =          643
+647
+ Introduce n:
+ max =          647
+ Introduce n:
+ max =          647
+648
+ Introduce n:
+ max =          647
+ Introduce n:
+ max =          647
+649
+ Introduce n:
+ max =          647
+ Introduce n:
+ max =          647
+650
+ Introduce n:
+ max =          647
+ Introduce n:
+ max =          647
+651
+ Introduce n:
+ max =          647
+ Introduce n:
+ max =          647
+652
+ Introduce n:
+ max =          647
+ Introduce n:
+ max =          647
+653
+ Introduce n:
+ max =          653
+ Introduce n:
+ max =          653
+654
+ Introduce n:
+ max =          653
+ Introduce n:
+ max =          653
+655
+ Introduce n:
+ max =          653
+ Introduce n:
+ max =          653
+656
+ Introduce n:
+ max =          653
+ Introduce n:
+ max =          653
+657
+ Introduce n:
+ max =          653
+ Introduce n:
+ max =          653
+658
+ Introduce n:
+ max =          653
+ Introduce n:
+ max =          653
+659
+ Introduce n:
+ Introduce n:
+ max =          659
+660
+ Introduce n:
+ max =          659
+ Introduce n:
+ max =          659
+661
+ Introduce n:
+ max =          661
+ Introduce n:
+ max =          661
+662
+ Introduce n:
+ max =          661
+ Introduce n:
+ max =          661
+663
+ Introduce n:
+ max =          661
+ Introduce n:
+ max =          661
+664
+ Introduce n:
+ max =          661
+ Introduce n:
+ max =          661
+665
+ Introduce n:
+ max =          661
+ Introduce n:
+ max =          661
+666
+ Introduce n:
+ max =          661
+ Introduce n:
+ max =          661
+667
+ Introduce n:
+ max =          661
+ Introduce n:
+ max =          661
+668
+ Introduce n:
+ max =          661
+ Introduce n:
+ max =          661
+669
+ Introduce n:
+ max =          661
+ Introduce n:
+ max =          661
+670
+ Introduce n:
+ Introduce n:
+ max =          661
+671
+ Introduce n:
+ max =          661
+ Introduce n:
+ max =          661
+672
+ Introduce n:
+ max =          661
+ Introduce n:
+ max =          661
+673
+ Introduce n:
+ max =          673
+ Introduce n:
+ max =          673
+674
+ Introduce n:
+ max =          673
+ Introduce n:
+ max =          673
+675
+ Introduce n:
+ max =          673
+ Introduce n:
+ max =          673
+676
+ Introduce n:
+ max =          673
+ Introduce n:
+ max =          673
+677
+ Introduce n:
+ max =          677
+ Introduce n:
+ max =          677
+678
+ Introduce n:
+ max =          677
+ Introduce n:
+ max =          677
+679
+ Introduce n:
+ max =          677
+ Introduce n:
+ max =          677
+680
+ Introduce n:
+ max =          677
+ Introduce n:
+ max =          677
+681
+ Introduce n:
+ max =          677
+ Introduce n:
+ max =          677
+682
+ Introduce n:
+ max =          677
+ Introduce n:
+ max =          677
+683
+ Introduce n:
+ max =          683
+ Introduce n:
+ max =          683
+684
+ Introduce n:
+ max =          683
+ Introduce n:
+ max =          683
+685
+ Introduce n:
+ max =          683
+ Introduce n:
+ max =          683
+686
+ Introduce n:
+ max =          683
+ Introduce n:
+ max =          683
+687
+ Introduce n:
+ max =          683
+ Introduce n:
+ max =          683
+688
+ Introduce n:
+ max =          683
+ Introduce n:
+ max =          683
+689
+ Introduce n:
+ max =          683
+ Introduce n:
+ max =          683
+690
+ Introduce n:
+ max =          683
+ Introduce n:
+ max =          683
+691
+ Introduce n:
+ max =          691
+ Introduce n:
+ max =          691
+692
+ Introduce n:
+ max =          691
+ Introduce n:
+ max =          691
+693
+ Introduce n:
+ max =          691
+ Introduce n:
+ max =          691
+694
+ Introduce n:
+ max =          691
+ Introduce n:
+ max =          691
+695
+ Introduce n:
+ max =          691
+ Introduce n:
+ max =          691
+696
+ Introduce n:
+ max =          691
+ Introduce n:
+ max =          691
+697
+ Introduce n:
+ max =          691
+ Introduce n:
+ max =          691
+698
+ Introduce n:
+ max =          691
+ Introduce n:
+ max =          691
+699
+ Introduce n:
+ max =          691
+ Introduce n:
+ max =          691
+700
+ Introduce n:
+ max =          691
+ Introduce n:
+ max =          691
+701
+ Introduce n:
+ max =          701
+ Introduce n:
+ max =          701
+702
+ Introduce n:
+ max =          701
+ Introduce n:
+ max =          701
+703
+ Introduce n:
+ max =          701
+ Introduce n:
+ max =          701
+704
+ Introduce n:
+ max =          701
+ Introduce n:
+ max =          701
+705
+ Introduce n:
+ max =          701
+ Introduce n:
+ max =          701
+706
+ Introduce n:
+ max =          701
+ Introduce n:
+ max =          701
+707
+ Introduce n:
+ max =          701
+ Introduce n:
+ max =          701
+708
+ Introduce n:
+ max =          701
+ Introduce n:
+ max =          701
+709
+ Introduce n:
+ max =          709
+ Introduce n:
+ max =          709
+710
+ Introduce n:
+ max =          709
+ Introduce n:
+ max =          709
+711
+ Introduce n:
+ max =          709
+ Introduce n:
+ max =          709
+712
+ Introduce n:
+ max =          709
+ Introduce n:
+ max =          709
+713
+ Introduce n:
+ max =          709
+ Introduce n:
+ max =          709
+714
+ Introduce n:
+ max =          709
+ Introduce n:
+ max =          709
+715
+ Introduce n:
+ max =          709
+ Introduce n:
+ max =          709
+716
+ Introduce n:
+ max =          709
+ Introduce n:
+ max =          709
+717
+ Introduce n:
+ max =          709
+ Introduce n:
+ max =          709
+718
+ Introduce n:
+ max =          709
+ Introduce n:
+ max =          709
+719
+ Introduce n:
+ max =          719
+ Introduce n:
+ max =          719
+720
+ Introduce n:
+ max =          719
+ Introduce n:
+ max =          719
+721
+ Introduce n:
+ max =          719
+ Introduce n:
+ max =          719
+722
+ Introduce n:
+ max =          719
+ Introduce n:
+ max =          719
+723
+ Introduce n:
+ max =          719
+ Introduce n:
+ max =          719
+724
+ Introduce n:
+ max =          719
+ Introduce n:
+ max =          719
+725
+ Introduce n:
+ max =          719
+ Introduce n:
+ max =          719
+726
+ Introduce n:
+ max =          719
+ Introduce n:
+ max =          719
+727
+ Introduce n:
+ max =          727
+ Introduce n:
+ max =          727
+728
+ Introduce n:
+ max =          727
+ Introduce n:
+ max =          727
+729
+ Introduce n:
+ max =          727
+ Introduce n:
+ max =          727
+730
+ Introduce n:
+ max =          727
+ Introduce n:
+ max =          727
+731
+ Introduce n:
+ Introduce n:
+ max =          727
+732
+ Introduce n:
+ max =          727
+ Introduce n:
+ max =          727
+733
+ Introduce n:
+ max =          733
+ Introduce n:
+ max =          733
+734
+ Introduce n:
+ max =          733
+ Introduce n:
+ max =          733
+735
+ Introduce n:
+ max =          733
+ Introduce n:
+ max =          733
+736
+ Introduce n:
+ max =          733
+ Introduce n:
+ max =          733
+737
+ Introduce n:
+ max =          733
+ Introduce n:
+ max =          733
+738
+ Introduce n:
+ max =          733
+ Introduce n:
+ max =          733
+739
+ Introduce n:
+ max =          739
+ Introduce n:
+ max =          739
+740
+ Introduce n:
+ max =          739
+ Introduce n:
+ max =          739
+741
+ Introduce n:
+ max =          739
+ Introduce n:
+ max =          739
+742
+ Introduce n:
+ max =          739
+ Introduce n:
+ max =          739
+743
+ Introduce n:
+ max =          743
+ Introduce n:
+ max =          743
+744
+ Introduce n:
+ max =          743
+ Introduce n:
+ max =          743
+745
+ Introduce n:
+ max =          743
+ Introduce n:
+ max =          743
+746
+ Introduce n:
+ max =          743
+ Introduce n:
+ max =          743
+747
+ Introduce n:
+ max =          743
+ Introduce n:
+ max =          743
+748
+ Introduce n:
+ max =          743
+ Introduce n:
+ max =          743
+749
+ Introduce n:
+ max =          743
+ Introduce n:
+ max =          743
+750
+ Introduce n:
+ max =          743
+ Introduce n:
+ max =          743
+751
+ Introduce n:
+ max =          751
+ Introduce n:
+ max =          751
+752
+ Introduce n:
+ max =          751
+ Introduce n:
+ max =          751
+753
+ Introduce n:
+ max =          751
+ Introduce n:
+ max =          751
+754
+ Introduce n:
+ max =          751
+ Introduce n:
+ max =          751
+755
+ Introduce n:
+ max =          751
+ Introduce n:
+ max =          751
+756
+ Introduce n:
+ max =          751
+ Introduce n:
+ max =          751
+757
+ Introduce n:
+ max =          757
+ Introduce n:
+ max =          757
+758
+ Introduce n:
+ max =          757
+ Introduce n:
+ max =          757
+759
+ Introduce n:
+ max =          757
+ Introduce n:
+ max =          757
+760
+ Introduce n:
+ max =          757
+ Introduce n:
+ max =          757
+761
+ Introduce n:
+ max =          761
+ Introduce n:
+ max =          761
+762
+ Introduce n:
+ max =          761
+ Introduce n:
+ max =          761
+763
+ Introduce n:
+ max =          761
+ Introduce n:
+ max =          761
+764
+ Introduce n:
+ max =          761
+ Introduce n:
+ max =          761
+765
+ Introduce n:
+ max =          761
+ Introduce n:
+ max =          761
+766
+ Introduce n:
+ max =          761
+ Introduce n:
+ max =          761
+767
+ Introduce n:
+ max =          761
+ Introduce n:
+ max =          761
+768
+ Introduce n:
+ max =          761
+ Introduce n:
+ max =          761
+769
+ Introduce n:
+ max =          769
+ Introduce n:
+ max =          769
+770
+ Introduce n:
+ max =          769
+ Introduce n:
+ max =          769
+771
+ Introduce n:
+ max =          769
+ Introduce n:
+ max =          769
+772
+ Introduce n:
+ max =          769
+ Introduce n:
+ max =          769
+773
+ Introduce n:
+ max =          773
+ Introduce n:
+ max =          773
+774
+ Introduce n:
+ max =          773
+ Introduce n:
+ max =          773
+775
+ Introduce n:
+ max =          773
+ Introduce n:
+ max =          773
+776
+ Introduce n:
+ max =          773
+ Introduce n:
+ max =          773
+777
+ Introduce n:
+ max =          773
+ Introduce n:
+ max =          773
+778
+ Introduce n:
+ max =          773
+ Introduce n:
+ max =          773
+779
+ Introduce n:
+ max =          773
+ Introduce n:
+ max =          773
+780
+ Introduce n:
+ max =          773
+ Introduce n:
+ max =          773
+781
+ Introduce n:
+ max =          773
+ Introduce n:
+ max =          773
+782
+ Introduce n:
+ max =          773
+ Introduce n:
+ max =          773
+783
+ Introduce n:
+ max =          773
+ Introduce n:
+ max =          773
+784
+ Introduce n:
+ max =          773
+ Introduce n:
+ max =          773
+785
+ Introduce n:
+ max =          773
+ Introduce n:
+ max =          773
+786
+ Introduce n:
+ max =          773
+ Introduce n:
+ max =          773
+787
+ Introduce n:
+ max =          787
+ Introduce n:
+ max =          787
+788
+ Introduce n:
+ max =          787
+ Introduce n:
+ max =          787
+789
+ Introduce n:
+ max =          787
+ Introduce n:
+ max =          787
+790
+ Introduce n:
+ max =          787
+ Introduce n:
+ max =          787
+791
+ Introduce n:
+ max =          787
+ Introduce n:
+ max =          787
+792
+ Introduce n:
+ max =          787
+ Introduce n:
+ max =          787
+793
+ Introduce n:
+ max =          787
+ Introduce n:
+ max =          787
+794
+ Introduce n:
+ max =          787
+ Introduce n:
+ max =          787
+795
+ Introduce n:
+ max =          787
+ Introduce n:
+ max =          787
+796
+ Introduce n:
+ max =          787
+ Introduce n:
+ max =          787
+797
+ Introduce n:
+ max =          797
+ Introduce n:
+ max =          797
+798
+ Introduce n:
+ max =          797
+ Introduce n:
+ max =          797
+799
+ Introduce n:
+ max =          797
+ Introduce n:
+ max =          797
+800
+ Introduce n:
+ max =          797
+ Introduce n:
+ max =          797
+801
+ Introduce n:
+ max =          797
+ Introduce n:
+ max =          797
+802
+ Introduce n:
+ max =          797
+ Introduce n:
+ max =          797
+803
+ Introduce n:
+ max =          797
+ Introduce n:
+ max =          797
+804
+ Introduce n:
+ max =          797
+ Introduce n:
+ max =          797
+805
+ Introduce n:
+ max =          797
+ Introduce n:
+ max =          797
+806
+ Introduce n:
+ max =          797
+ Introduce n:
+ max =          797
+807
+ Introduce n:
+ max =          797
+ Introduce n:
+ max =          797
+808
+ Introduce n:
+ max =          797
+ Introduce n:
+ max =          797
+809
+ Introduce n:
+ max =          809
+ Introduce n:
+ max =          809
+810
+ Introduce n:
+ max =          809
+ Introduce n:
+ max =          809
+811
+ Introduce n:
+ max =          811
+ Introduce n:
+ max =          811
+812
+ Introduce n:
+ max =          811
+ Introduce n:
+ max =          811
+813
+ Introduce n:
+ max =          811
+ Introduce n:
+ max =          811
+814
+ Introduce n:
+ max =          811
+ Introduce n:
+ max =          811
+815
+ Introduce n:
+ max =          811
+ Introduce n:
+ max =          811
+816
+ Introduce n:
+ max =          811
+ Introduce n:
+ max =          811
+817
+ Introduce n:
+ max =          811
+ Introduce n:
+ max =          811
+818
+ Introduce n:
+ max =          811
+ Introduce n:
+ max =          811
+819
+ Introduce n:
+ max =          811
+ Introduce n:
+ max =          811
+820
+ Introduce n:
+ max =          811
+ Introduce n:
+ max =          811
+821
+ Introduce n:
+ max =          821
+ Introduce n:
+ max =          821
+822
+ Introduce n:
+ max =          821
+ Introduce n:
+ max =          821
+823
+ Introduce n:
+ max =          823
+ Introduce n:
+ max =          823
+824
+ Introduce n:
+ max =          823
+ Introduce n:
+ max =          823
+825
+ Introduce n:
+ max =          823
+ Introduce n:
+ max =          823
+826
+ Introduce n:
+ max =          823
+ Introduce n:
+ max =          823
+827
+ Introduce n:
+ max =          827
+ Introduce n:
+ max =          827
+828
+ Introduce n:
+ max =          827
+ Introduce n:
+ max =          827
+829
+ Introduce n:
+ max =          829
+ Introduce n:
+ max =          829
+830
+ Introduce n:
+ max =          829
+ Introduce n:
+ max =          829
+831
+ Introduce n:
+ max =          829
+ Introduce n:
+ max =          829
+832
+ Introduce n:
+ max =          829
+ Introduce n:
+ max =          829
+833
+ Introduce n:
+ max =          829
+ Introduce n:
+ max =          829
+834
+ Introduce n:
+ max =          829
+ Introduce n:
+ max =          829
+835
+ Introduce n:
+ max =          829
+ Introduce n:
+ max =          829
+836
+ Introduce n:
+ max =          829
+ Introduce n:
+ max =          829
+837
+ Introduce n:
+ max =          829
+ Introduce n:
+ max =          829
+838
+ Introduce n:
+ max =          829
+ Introduce n:
+ max =          829
+839
+ Introduce n:
+ max =          839
+ Introduce n:
+ max =          839
+840
+ Introduce n:
+ max =          839
+ Introduce n:
+ max =          839
+841
+ Introduce n:
+ max =          839
+ Introduce n:
+ max =          839
+842
+ Introduce n:
+ max =          839
+ Introduce n:
+ max =          839
+843
+ Introduce n:
+ max =          839
+ Introduce n:
+ max =          839
+844
+ Introduce n:
+ max =          839
+ Introduce n:
+ max =          839
+845
+ Introduce n:
+ max =          839
+ Introduce n:
+ max =          839
+846
+ Introduce n:
+ max =          839
+ Introduce n:
+ max =          839
+847
+ Introduce n:
+ max =          839
+ Introduce n:
+ max =          839
+848
+ Introduce n:
+ max =          839
+ Introduce n:
+ max =          839
+849
+ Introduce n:
+ max =          839
+ Introduce n:
+ max =          839
+850
+ Introduce n:
+ max =          839
+ Introduce n:
+ max =          839
+851
+ Introduce n:
+ max =          839
+ Introduce n:
+ max =          839
+852
+ Introduce n:
+ max =          839
+ Introduce n:
+ max =          839
+853
+ Introduce n:
+ max =          853
+ Introduce n:
+ max =          853
+854
+ Introduce n:
+ max =          853
+ Introduce n:
+ max =          853
+855
+ Introduce n:
+ max =          853
+ Introduce n:
+ max =          853
+856
+ Introduce n:
+ max =          853
+ Introduce n:
+ max =          853
+857
+ Introduce n:
+ max =          857
+ Introduce n:
+ max =          857
+858
+ Introduce n:
+ max =          857
+ Introduce n:
+ max =          857
+859
+ Introduce n:
+ max =          859
+ Introduce n:
+ max =          859
+860
+ Introduce n:
+ max =          859
+ Introduce n:
+ max =          859
+861
+ Introduce n:
+ max =          859
+ Introduce n:
+ max =          859
+862
+ Introduce n:
+ max =          859
+ Introduce n:
+ max =          859
+863
+ Introduce n:
+ max =          863
+ Introduce n:
+ max =          863
+864
+ Introduce n:
+ max =          863
+ Introduce n:
+ max =          863
+865
+ Introduce n:
+ max =          863
+ Introduce n:
+ max =          863
+866
+ Introduce n:
+ max =          863
+ Introduce n:
+ max =          863
+867
+ Introduce n:
+ max =          863
+ Introduce n:
+ max =          863
+868
+ Introduce n:
+ max =          863
+ Introduce n:
+ max =          863
+869
+ Introduce n:
+ max =          863
+ Introduce n:
+ max =          863
+870
+ Introduce n:
+ max =          863
+ Introduce n:
+ max =          863
+871
+ Introduce n:
+ max =          863
+ Introduce n:
+ max =          863
+872
+ Introduce n:
+ max =          863
+ Introduce n:
+ max =          863
+873
+ Introduce n:
+ max =          863
+ Introduce n:
+ max =          863
+874
+ Introduce n:
+ max =          863
+ Introduce n:
+ max =          863
+875
+ Introduce n:
+ max =          863
+ Introduce n:
+ max =          863
+876
+ Introduce n:
+ max =          863
+ Introduce n:
+ max =          863
+877
+ Introduce n:
+ max =          877
+ Introduce n:
+ max =          877
+878
+ Introduce n:
+ max =          877
+ Introduce n:
+ max =          877
+879
+ Introduce n:
+ max =          877
+ Introduce n:
+ max =          877
+880
+ Introduce n:
+ max =          877
+ Introduce n:
+ max =          877
+881
+ Introduce n:
+ max =          881
+ Introduce n:
+882
+ Introduce n:
+ max =          881
+ Introduce n:
+ max =          881
+883
+ Introduce n:
+ max =          883
+ Introduce n:
+ max =          883
+884
+ Introduce n:
+ max =          883
+ Introduce n:
+ max =          883
+885
+ Introduce n:
+ max =          883
+ Introduce n:
+ max =          883
+886
+ Introduce n:
+ max =          883
+ Introduce n:
+ max =          883
+887
+ Introduce n:
+ max =          887
+ Introduce n:
+ max =          887
+888
+ Introduce n:
+ max =          887
+ Introduce n:
+ max =          887
+889
+ Introduce n:
+ max =          887
+ Introduce n:
+ max =          887
+890
+ Introduce n:
+ max =          887
+ Introduce n:
+ max =          887
+891
+ Introduce n:
+ max =          887
+ Introduce n:
+ max =          887
+892
+ Introduce n:
+ max =          887
+ Introduce n:
+ max =          887
+893
+ Introduce n:
+ max =          887
+ Introduce n:
+ max =          887
+894
+ Introduce n:
+ max =          887
+ Introduce n:
+ max =          887
+895
+ Introduce n:
+ max =          887
+ Introduce n:
+ max =          887
+896
+ Introduce n:
+ max =          887
+ Introduce n:
+ max =          887
+897
+ Introduce n:
+ max =          887
+ Introduce n:
+ max =          887
+898
+ Introduce n:
+ max =          887
+ Introduce n:
+ max =          887
+899
+ Introduce n:
+ max =          887
+ Introduce n:
+ max =          887
+900
+ Introduce n:
+ max =          887
+ Introduce n:
+ max =          887
+901
+ Introduce n:
+ max =          887
+ Introduce n:
+ max =          887
+902
+ Introduce n:
+ max =          887
+ Introduce n:
+ max =          887
+903
+ Introduce n:
+ max =          887
+ Introduce n:
+ max =          887
+904
+ Introduce n:
+ max =          887
+ Introduce n:
+ max =          887
+905
+ Introduce n:
+ max =          887
+ Introduce n:
+ max =          887
+906
+ Introduce n:
+ max =          887
+ Introduce n:
+ max =          887
+907
+ Introduce n:
+ max =          907
+ Introduce n:
+ max =          907
+908
+ Introduce n:
+ max =          907
+ Introduce n:
+ max =          907
+909
+ Introduce n:
+ max =          907
+ Introduce n:
+ max =          907
+910
+ Introduce n:
+ max =          907
+ Introduce n:
+ max =          907
+911
+ Introduce n:
+ max =          911
+ Introduce n:
+ max =          911
+912
+ Introduce n:
+ max =          911
+ Introduce n:
+ max =          911
+913
+ Introduce n:
+ max =          911
+ Introduce n:
+ max =          911
+914
+ Introduce n:
+ max =          911
+ Introduce n:
+ max =          911
+915
+ Introduce n:
+ max =          911
+ Introduce n:
+ max =          911
+916
+ Introduce n:
+ max =          911
+ Introduce n:
+ max =          911
+917
+ Introduce n:
+ max =          911
+ Introduce n:
+ max =          911
+918
+ Introduce n:
+ max =          911
+ Introduce n:
+ max =          911
+919
+ Introduce n:
+ max =          919
+ Introduce n:
+ max =          919
+920
+ Introduce n:
+ max =          919
+ Introduce n:
+ max =          919
+921
+ Introduce n:
+ max =          919
+ Introduce n:
+ max =          919
+922
+ Introduce n:
+ max =          919
+ Introduce n:
+ max =          919
+923
+ Introduce n:
+ max =          919
+ Introduce n:
+ max =          919
+924
+ Introduce n:
+ max =          919
+ Introduce n:
+ max =          919
+925
+ Introduce n:
+ max =          919
+ Introduce n:
+ max =          919
+926
+ Introduce n:
+ max =          919
+ Introduce n:
+ max =          919
+927
+ Introduce n:
+ max =          919
+ Introduce n:
+ max =          919
+928
+ Introduce n:
+ max =          919
+ Introduce n:
+ max =          919
+929
+ Introduce n:
+ max =          929
+ Introduce n:
+ max =          929
+930
+ Introduce n:
+ max =          929
+ Introduce n:
+ max =          929
+931
+ Introduce n:
+ max =          929
+ Introduce n:
+ max =          929
+932
+ Introduce n:
+ max =          929
+ Introduce n:
+ max =          929
+933
+ Introduce n:
+ max =          929
+ Introduce n:
+ max =          929
+934
+ Introduce n:
+ max =          929
+ Introduce n:
+ max =          929
+935
+ Introduce n:
+ max =          929
+ Introduce n:
+ max =          929
+936
+ Introduce n:
+ max =          929
+ Introduce n:
+ max =          929
+937
+ Introduce n:
+ max =          937
+ Introduce n:
+ max =          937
+938
+ Introduce n:
+ max =          937
+ Introduce n:
+ max =          937
+939
+ Introduce n:
+ max =          937
+ Introduce n:
+ max =          937
+940
+ Introduce n:
+ max =          937
+ Introduce n:
+ max =          937
+941
+ Introduce n:
+ max =          941
+ Introduce n:
+ max =          941
+942
+ Introduce n:
+ max =          941
+ Introduce n:
+ max =          941
+943
+ Introduce n:
+ max =          941
+ Introduce n:
+ max =          941
+944
+ Introduce n:
+ max =          941
+ Introduce n:
+ max =          941
+945
+ Introduce n:
+ max =          941
+ Introduce n:
+ max =          941
+946
+ Introduce n:
+ max =          941
+ Introduce n:
+ max =          941
+947
+ Introduce n:
+ max =          947
+ Introduce n:
+ max =          947
+948
+ Introduce n:
+ max =          947
+ Introduce n:
+ max =          947
+949
+ Introduce n:
+ max =          947
+ Introduce n:
+ max =          947
+950
+ Introduce n:
+ max =          947
+ Introduce n:
+ max =          947
+951
+ Introduce n:
+ max =          947
+ Introduce n:
+ max =          947
+952
+ Introduce n:
+ max =          947
+ Introduce n:
+ max =          947
+953
+ Introduce n:
+ max =          953
+ Introduce n:
+ max =          953
+954
+ Introduce n:
+ max =          953
+ Introduce n:
+ max =          953
+955
+ Introduce n:
+ max =          953
+ Introduce n:
+ max =          953
+956
+ Introduce n:
+ max =          953
+ Introduce n:
+ max =          953
+957
+ Introduce n:
+ max =          953
+ Introduce n:
+ max =          953
+958
+ Introduce n:
+ max =          953
+ Introduce n:
+ max =          953
+959
+ Introduce n:
+ max =          953
+ Introduce n:
+ max =          953
+960
+ Introduce n:
+ max =          953
+ Introduce n:
+ max =          953
+961
+ Introduce n:
+ max =          953
+ Introduce n:
+ max =          953
+962
+ Introduce n:
+ max =          953
+ Introduce n:
+ max =          953
+963
+ Introduce n:
+ max =          953
+ Introduce n:
+ max =          953
+964
+ Introduce n:
+ max =          953
+ Introduce n:
+ max =          953
+965
+ Introduce n:
+ max =          953
+ Introduce n:
+ max =          953
+966
+ Introduce n:
+ max =          953
+ Introduce n:
+ max =          953
+967
+ Introduce n:
+ Introduce n:
+ max =          967
+968
+ Introduce n:
+ max =          967
+ Introduce n:
+ max =          967
+969
+ Introduce n:
+ max =          967
+ Introduce n:
+ max =          967
+970
+ Introduce n:
+ max =          967
+ Introduce n:
+ max =          967
+971
+ Introduce n:
+ max =          971
+ Introduce n:
+ max =          971
+972
+ Introduce n:
+ max =          971
+ Introduce n:
+ max =          971
+973
+ Introduce n:
+ max =          971
+ Introduce n:
+ max =          971
+974
+ Introduce n:
+ max =          971
+ Introduce n:
+ max =          971
+975
+ Introduce n:
+ max =          971
+ Introduce n:
+ max =          971
+976
+ Introduce n:
+ max =          971
+ Introduce n:
+ max =          971
+977
+ Introduce n:
+ max =          977
+ Introduce n:
+ max =          977
+978
+ Introduce n:
+ max =          977
+ Introduce n:
+ max =          977
+979
+ Introduce n:
+ max =          977
+ Introduce n:
+ max =          977
+980
+ Introduce n:
+ max =          977
+ Introduce n:
+ max =          977
+981
+ Introduce n:
+ max =          977
+ Introduce n:
+ max =          977
+982
+ Introduce n:
+ max =          977
+ Introduce n:
+ max =          977
+983
+ Introduce n:
+ max =          983
+ Introduce n:
+ max =          983
+984
+ Introduce n:
+ max =          983
+ Introduce n:
+ max =          983
+985
+ Introduce n:
+ max =          983
+ Introduce n:
+ max =          983
+986
+ Introduce n:
+ max =          983
+ Introduce n:
+ max =          983
+987
+ Introduce n:
+ max =          983
+ Introduce n:
+988
+ Introduce n:
+ max =          983
+ Introduce n:
+ max =          983
+989
+ Introduce n:
+ max =          983
+ Introduce n:
+ max =          983
+990
+ Introduce n:
+ max =          983
+ Introduce n:
+ max =          983
+991
+ Introduce n:
+ max =          991
+ Introduce n:
+ max =          991
+992
+ Introduce n:
+ max =          991
+ Introduce n:
+ max =          991
+993
+ Introduce n:
+ max =          991
+ Introduce n:
+ max =          991
+994
+ Introduce n:
+ max =          991
+ Introduce n:
+ max =          991
+995
+ Introduce n:
+ max =          991
+ Introduce n:
+ max =          991
+996
+ Introduce n:
+ max =          991
+ Introduce n:
+ max =          991
+997
+ Introduce n:
+ max =          997
+ Introduce n:
+ max =          997
+998
+ Introduce n:
+ max =          997
+ Introduce n:
+ max =          997
+999
+ Introduce n:
+ max =          997
+ Introduce n:
+ max =          997
+1000
+ Introduce n:
+ max =          997
+ Introduce n:
+ max =          997
+
