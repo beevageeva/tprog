@@ -39,13 +39,13 @@ PROGRAM prac2
   print*, "Before any op: proc= ",myRank, ", array=", arr
   ! I always make sqrt(n) - 1 iterations and k may 
   ! have be removed in a previous step, but if this is the case its multiples as
-  ! well and all the arrays will be unchanged
+  ! well and all the arrays will be unchanged (the result is the same)
   ! the possibility is to find the minimum greater than last k
   ! but I have to make a mpi call because I don't know  which process have it
   ! see 
   ! https://github.com/beevageeva/tprog/blob/master/prac2mod.f90
   ! implementing  exactly the algortithm from the text
-  ! iteration vs mpi call overhead
+  ! (iteration vs mpi call overhead)
   do k = 2, int(sqrt(real(n))) 
     ! eliminate multiples of k greater than k (put or condition in mask I want
     ! to use array operations , this is the only difference from the original
