@@ -1,7 +1,10 @@
+! original problem at:
+!(https://github.com/beevageeva/tprog/blob/master/prac2.f90)
+
 PROGRAM prac2
   USE MPI
   INTEGER :: master=0
-  INTEGER :: n,localStart,localEnd, k, maxValue
+  INTEGER :: n,localStart,localEnd, k, i, mmValue=2
   INTEGER, dimension(:), allocatable :: arr
   INTEGER :: myRank, numProcs, status(MPI_STATUS_SIZE), ierr
 
@@ -16,13 +19,7 @@ PROGRAM prac2
   end if
   ! send n from process master(0) to all processes
   call mpi_bcast(n, 1, mpi_integer, master, mpi_comm_world, ierr)
-	! the problem is equivalent to:
-	!for a given n find all prime numbers x
-	! n > x > sqrt(n)   
-	!and put them in a list(and print the max afterwards)
-  !(https://github.com/beevageeva/tprog/blob/master/prac2p.f90)
-  ! but here we create an initial list with consecutive numbers(from 2 to n) and eliminate
-  ! multiples of k for k = 2, sqrt(n)  
+ 
   ! each process creates its own initial array 
   k = int((n-1)/numProcs)
   localStart = 2 + myRank * k
@@ -37,11 +34,28 @@ PROGRAM prac2
   do k = localStart, localEnd
     arr(k - localStart + 1) = k
   end do
-
-  do k = 2, int(sqrt(real(n)))
-    ! eliminate multiples of k
+  ! used to count iterations
+  i = 0
+  print*, "Before any op: proc= ",myRank, ", array=", arr
+  k = 2
+  do while(k <= int(sqrt(real(n))))
+    ! eliminate multiples of k greater than k (put or condition in mask, I want
+    ! to use array operations)
     ! TODO memory(new array is smaller than initially allocated) valgrind result: no memory leak
-    arr = pack(arr,mod(arr,k)/=0)
+    arr = pack(arr, (mod(arr,k)/=0 .OR. arr==k) )
+    ! calculate local min
+    ! no need to init mmValue (in fact it will not be taken into account) if there is no element in array with the condition > k it
+    ! will be assigned biggest integer value
+    !  mmValue = n
+    mmValue = MINVAL(arr, arr>k)
+    ! in fact searching for min should be done from the first proc to the last
+    ! as the array is ordered, see below the same issue  when getting the max
+    !calculate global min
+    call mpi_allreduce(mmValue, k, 1, MPI_INTEGER, MPI_MIN,  MPI_COMM_WORLD, ierr)   
+    i=i+1
+
+    print*, "Step ", i, " proc= ",myRank, ", mymin=",mmValue, "globalMin=",k, ", array=", arr
+
   end do
 
   !print*, "Process ", myRank, ": ", arr
@@ -59,9 +73,9 @@ PROGRAM prac2
       k = arr(size(arr))
    end if  
   deallocate(arr)
-   call mpi_reduce(k, maxValue, 1, MPI_INTEGER, MPI_MAX, master,  MPI_COMM_WORLD, ierr)   
+   call mpi_reduce(k, mmValue, 1, MPI_INTEGER, MPI_MAX, master,  MPI_COMM_WORLD, ierr)   
   if(myRank == master) then
-    print*, "max = ", maxValue
+    print*,"After ", i, "iterations, ", "max = ", mmValue
   end if
   
   CALL MPI_Finalize(ierr) 

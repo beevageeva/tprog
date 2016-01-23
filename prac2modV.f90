@@ -1,7 +1,10 @@
+! see version at:
+!(https://github.com/beevageeva/tprog/blob/master/prac2mod.f90)
+
 PROGRAM prac2
   USE MPI
   INTEGER :: master=0
-  INTEGER :: n,localStart,localEnd, k, maxValue
+  INTEGER :: n,localStart,localEnd, k, i, mmValue=2
   INTEGER, dimension(:), allocatable :: arr
   INTEGER :: myRank, numProcs, status(MPI_STATUS_SIZE), ierr
 
@@ -16,13 +19,7 @@ PROGRAM prac2
   end if
   ! send n from process master(0) to all processes
   call mpi_bcast(n, 1, mpi_integer, master, mpi_comm_world, ierr)
-	! the problem is equivalent to:
-	!for a given n find all prime numbers x
-	! n > x > sqrt(n)   
-	!and put them in a list(and print the max afterwards)
-  !(https://github.com/beevageeva/tprog/blob/master/prac2p.f90)
-  ! but here we create an initial list with consecutive numbers(from 2 to n) and eliminate
-  ! multiples of k for k = 2, sqrt(n)  
+ 
   ! each process creates its own initial array 
   k = int((n-1)/numProcs)
   localStart = 2 + myRank * k
@@ -37,14 +34,30 @@ PROGRAM prac2
   do k = localStart, localEnd
     arr(k - localStart + 1) = k
   end do
-
-  do k = 2, int(sqrt(real(n)))
-    ! eliminate multiples of k
+  ! used to count iterations
+  i = 0
+  print*, "Before any op: proc= ",myRank, ", array=", arr
+  ! I always make sqrt(n) - 1 iterations and k may 
+  ! have be removed in a previous step, but if this is the case its multiples as
+  ! well and all the arrays will be unchanged
+  ! the possibility is to find the minimum greater than last k
+  ! but I have to make a mpi call because I don't know  which process have it
+  ! see 
+  ! https://github.com/beevageeva/tprog/blob/master/prac2mod.f90
+  ! implementing  exactly the algortithm from the text
+  ! iteration vs mpi call overhead
+  do k = 2, int(sqrt(real(n))) 
+    ! eliminate multiples of k greater than k (put or condition in mask I want
+    ! to use array operations , this is the only difference from the original
+    ! problem)
     ! TODO memory(new array is smaller than initially allocated) valgrind result: no memory leak
-    arr = pack(arr,mod(arr,k)/=0)
+    arr = pack(arr, (mod(arr,k)/=0 .OR. arr==k) )
+    i=i+1
+    print*, "Step ", i, " proc= ",myRank, ", k=",k,", array=", arr
+
   end do
 
-  !print*, "Process ", myRank, ": ", arr
+  print*, "Process ", myRank, ": ", arr
 
   !PRINT THE MAX
   !we cannot send last element in the array from the last process only
@@ -59,9 +72,9 @@ PROGRAM prac2
       k = arr(size(arr))
    end if  
   deallocate(arr)
-   call mpi_reduce(k, maxValue, 1, MPI_INTEGER, MPI_MAX, master,  MPI_COMM_WORLD, ierr)   
+   call mpi_reduce(k, mmValue, 1, MPI_INTEGER, MPI_MAX, master,  MPI_COMM_WORLD, ierr)   
   if(myRank == master) then
-    print*, "max = ", maxValue
+    print*,"After ", i, "iterations, ", "max = ", mmValue
   end if
   
   CALL MPI_Finalize(ierr) 
