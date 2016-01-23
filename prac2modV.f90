@@ -40,14 +40,14 @@ PROGRAM prac2
   ! I always make sqrt(n) - 1 iterations and k may 
   ! have be removed in a previous step, but if this is the case its multiples as
   ! well and all the arrays will be unchanged (the result is the same)
-  ! the possibility is to find the minimum greater than last k
-  ! but I have to make a mpi call because I don't know  which process have it
-  ! see 
+  ! the possibility is to find the minimum greater than last k as specified in
+  ! the text but I have to make a mpi call 
+  ! because I don't know  which process have it see 
   ! https://github.com/beevageeva/tprog/blob/master/prac2mod.f90
   ! implementing  exactly the algortithm from the text
   ! (iteration vs mpi call overhead)
   do k = 2, int(sqrt(real(n))) 
-    ! eliminate multiples of k greater than k (put or condition in mask I want
+    ! eliminate multiples of k greater than k (put or condition in mask - I want
     ! to use array operations , this is the only difference from the original
     ! problem)
     ! TODO memory(new array is smaller than initially allocated) valgrind result: no memory leak
@@ -57,7 +57,7 @@ PROGRAM prac2
 
   end do
 
-  print*, "Process ", myRank, ": ", arr
+  !print*, "Process ", myRank, ": ", arr
 
   !PRINT THE MAX
   !we cannot send last element in the array from the last process only
